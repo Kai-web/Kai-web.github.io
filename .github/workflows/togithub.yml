@@ -24,7 +24,7 @@ jobs:
         with:
           node-version:  ${{ matrix.node }}
       
-		# 执行安装
+     # 执行安装
       - name: Install dependencies
         run: npm install
     
