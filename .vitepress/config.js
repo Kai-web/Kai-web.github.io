@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Wang",
+  base: "/blog/",
   description: "Record my learning and code",
   themeConfig: {
     logo: "/logo.png"
