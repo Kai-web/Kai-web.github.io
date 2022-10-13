@@ -6,7 +6,7 @@ hero:
   text: Hi, guys, this is my daily record!
   tagline: Record my learning and code......
   image:
-    src: logo.png
+    src: /logo.png
     alt: VitePress
   actions:
     - theme: brand
