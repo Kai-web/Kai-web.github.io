@@ -38,9 +38,9 @@ jobs:
         run: |
           cd .vitepress/dist 
           git init
-          git config user.name "gelxgx"
+          git config user.name "Kai-web"
           git config user.email "${{ secrets.GIT_EMAIL }}"
           git add -A
           git commit -m 'deploy'
-          git push -f https://gelxgx:${{ secrets.ACCESS_TOKEN }}@github.com/gelxgx/blog.git master:gh-pages
+          git push -f https://Kai-web:${{ secrets.ACCESS_TOKEN }}@github.com/Kai-web/blog.git master:gh-pages
           cd -
