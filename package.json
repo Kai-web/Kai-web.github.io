@@ -11,5 +11,8 @@
   "devDependencies": {
     "vitepress": "^1.0.0-alpha.18",
     "vue": "^3.2.40"
+  },
+  "dependencies": {
+    "postcss-pxtorem": "5.1.1"
   }
 }
