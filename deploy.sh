@@ -7,7 +7,7 @@ set -e
 npm run build
  
 # 进入生成的文件夹
-cd .vitepress/dist 
+cd docs/.vitepress/dist 
  
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
@@ -17,6 +17,6 @@ git add -A
 git commit -m 'deploy'
  
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/Kai-web/blog master:gh-pages
+git push -f git@github.com:Kai-web/Kai-web.github.io.git master:gh-pages
  
 cd -
