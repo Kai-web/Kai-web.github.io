@@ -4,6 +4,6 @@ export default defineConfig({
   base: "/blog/",
   description: "Record my learning and code",
   themeConfig: {
-    logo: "/logo.png"
+    logo: "/logo.svg"
   }
 })
