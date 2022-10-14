@@ -12,18 +12,12 @@ hero:
   actions:
     - theme: brand
       text: 更多详情
-      link: '/menu1/about'
+      link: '/menu1/前端环境搭建'
     - theme: alt
       text: 访问我的Github
       link: https://github.com/Kai-web
 
 features:
-  - icon: 💡
-    title: 极速的服务启动
-    details: 使用原生 ESM 文件，无需打包!
-  - icon: 🖖
-    title: 轻量快速的热重载
-    details: 无论程序大小如何，极快的模块热替换（HMR）
   - icon: 🛠️
     title: 设计以简单为先
     details: 借助Markdown，帮助您专注于编写和部署。

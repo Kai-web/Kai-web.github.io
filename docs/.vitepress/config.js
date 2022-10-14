@@ -1,5 +1,4 @@
 import menu1Sidebar from "./menu1Sidebar";
-import menu2Sidebar from "./menu2Sidebar";
 
 export default {
   base: '/',
@@ -8,12 +7,11 @@ export default {
   description: '学习开发日常记录', // 会渲染成<meta>标签，SEO用
   themeConfig: {
       nav: [
-          { text: '文档', link: '/menu1/about', activeMatch: '/menu1/' },
-          { text: '代码片段', link: '/menu2/', activeMatch: '/menu2/' },
+          { text: '文档', link: '/menu1/前端环境搭建', activeMatch: '/menu1/' },
       ],
       sidebar: {
         '/menu1/': menu1Sidebar,
-        '/menu2/': menu2Sidebar,
+        // '/menu2/': menu2Sidebar,
       },
       socialLinks: [
           { icon: 'github', link: 'https://github.com/Kai-web' },
