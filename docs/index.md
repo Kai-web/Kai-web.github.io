@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 更多详情
-      link: '/menu1/前端环境搭建'
+      link: '/menu1/思维导图/Git操作'
     - theme: alt
       text: 访问我的Github
       link: https://github.com/Kai-web
