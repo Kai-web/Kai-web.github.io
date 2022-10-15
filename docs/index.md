@@ -11,8 +11,8 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: 更多详情
-      link: '/menu1/思维导图/Git操作'
+      text: 查看更多
+      link: '/menu1/WebStorm编辑器/常用快捷键'
     - theme: alt
       text: 访问我的Github
       link: https://github.com/Kai-web
