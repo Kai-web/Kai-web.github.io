@@ -75,20 +75,20 @@ export default [
         ]
     },
     {
-        text: 'Vue模版',
+        text: 'Vue2',
         collapsible: true,
         collapsed: true,
         items: [
-            { text: 'Vue页面模版', link: `${commonPath}/Vue模版/Vue页面模版.md` },
+            { text: 'Vue页面模版', link: `${commonPath}/Vue2/Vue页面模版.md` },
         ]
     },
     {
-        text: '小程序模版',
+        text: '小程序',
         collapsible: true,
         collapsed: true,
         items: [
-            { text: '小程序page模版', link: `${commonPath}/小程序模版/小程序page模版.md` },
-            { text: '小程序components模板', link: `${commonPath}/小程序模版/小程序components模板.md` },
+            { text: '小程序page模版', link: `${commonPath}/小程序/小程序page模版.md` },
+            { text: '小程序components模板', link: `${commonPath}/小程序/小程序components模板.md` },
         ]
     },
     {

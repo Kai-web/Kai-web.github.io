@@ -26,7 +26,11 @@ export default {
       indexName: 'kai-web.cn',
     },
       nav: [
-          { text: '文档', link: '/menu1/前端环境搭建', activeMatch: '/menu1/' },
+          { text: 'Vue2', link: '/menu1/Vue2/Vue页面模版', activeMatch: '/menu1/' },
+          { text: '小程序', link: '/menu1/小程序/小程序page模版', activeMatch: '/menu1/' },
+          { text: '思维导图', link: '/menu1/思维导图/Git操作', activeMatch: '/menu1/' },
+          { text: 'WebStorm编辑器', link: '/menu1/WebStorm编辑器/常用快捷键', activeMatch: '/menu1/' },
+          { text: '前端环境', link: '/menu1/前端环境/前端环境搭建', activeMatch: '/menu1/' },
       ],
       sidebar: {
         '/menu1/': menu1Sidebar,
