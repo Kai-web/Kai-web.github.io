@@ -21,9 +21,9 @@ export default {
   themeConfig: {
     // 展示搜索框
     algolia: {
-      appId: '4BG2APT558',
-      appKey: 'c05267f1350720696b957de0f1f56356',
-      indexName: 'blog',
+      appId: '',
+      appKey: '',
+      indexName: '',
     },
       nav: [
           { text: 'Vue2', link: '/menu1/Vue2/Vue页面模版', activeMatch: '/menu1/' },
