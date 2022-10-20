@@ -19,6 +19,14 @@ export default [
         ]
     },
     {
+        text: 'Git',
+        collapsible: true,
+        collapsed: true,
+        items: [
+            { text: '常用命令', link: `${commonPath}/Git/常用命令.md` },
+        ]
+    },
+    {
         text: '思维导图',
         collapsible: true,
         collapsed: true,

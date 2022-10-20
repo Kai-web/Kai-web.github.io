@@ -1,3 +1,6 @@
+---
+title: 小程序components模板
+---
 # 小程序components模板
 
 ## index.js

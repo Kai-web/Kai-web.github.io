@@ -1,3 +1,6 @@
+---
+title: 生成Vue页面模版
+---
 # 生成Vue页面模版
 
 ```javascript

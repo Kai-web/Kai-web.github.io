@@ -1,3 +1,6 @@
+---
+title: 个性化console
+---
 # 个性化console
 
 ```javascript

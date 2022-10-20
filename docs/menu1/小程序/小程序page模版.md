@@ -1,3 +1,6 @@
+---
+title: 小程序page模版
+---
 # 小程序page模版
 
 ## index.js
