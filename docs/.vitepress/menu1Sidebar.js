@@ -14,6 +14,7 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
+            { text: '腾讯API逆解析坐标', link: `${commonPath}/小程序/腾讯API逆解析坐标.md` },
             { text: '小程序page模版', link: `${commonPath}/小程序/小程序page模版.md` },
             { text: '小程序components模板', link: `${commonPath}/小程序/小程序components模板.md` },
         ]
