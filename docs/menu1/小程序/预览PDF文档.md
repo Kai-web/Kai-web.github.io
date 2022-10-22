@@ -2,7 +2,7 @@
 title: 预览PDF文档
 ---
 
-## 预览PDF文档
+# 预览PDF文档
 
 ```javascript
 previewPdf () {
