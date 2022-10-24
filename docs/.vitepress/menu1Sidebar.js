@@ -18,6 +18,7 @@ export default [
             { text: '获取授权和定位封装', link: `${commonPath}/小程序/获取授权和定位封装.md` },
             { text: '腾讯逆解析坐标封装', link: `${commonPath}/小程序/腾讯逆解析坐标封装.md` },
             { text: '预览PDF文档封装', link: `${commonPath}/小程序/预览PDF文档封装.md` },
+            { text: 'vant获取手机号按钮封装', link: `${commonPath}/小程序/vant获取手机号按钮封装.md` },
             { text: '小程序page模版', link: `${commonPath}/小程序/小程序page模版.md` },
             { text: '小程序components模板', link: `${commonPath}/小程序/小程序components模板.md` },
         ]
