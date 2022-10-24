@@ -14,11 +14,12 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
-            { text: '监听网络状态', link: `${commonPath}/小程序/监听网络状态.md` },
+            { text: '全局监听网络状态', link: `${commonPath}/小程序/全局监听网络状态.md` },
             { text: '获取授权和定位封装', link: `${commonPath}/小程序/获取授权和定位封装.md` },
             { text: '腾讯逆解析坐标封装', link: `${commonPath}/小程序/腾讯逆解析坐标封装.md` },
             { text: '预览PDF文档封装', link: `${commonPath}/小程序/预览PDF文档封装.md` },
             { text: 'vant获取手机号按钮组件', link: `${commonPath}/小程序/vant获取手机号按钮组件.md` },
+            { text: '输入姓名添加特殊字符组件', link: `${commonPath}/小程序/输入姓名添加特殊字符组件.md` },
             { text: '小程序page模版', link: `${commonPath}/小程序/小程序page模版.md` },
             { text: '小程序components模板', link: `${commonPath}/小程序/小程序components模板.md` },
         ]

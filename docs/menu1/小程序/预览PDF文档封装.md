@@ -3,6 +3,7 @@ title: 预览PDF文档封装
 ---
 
 # 预览PDF文档封装
+## common.js
 
 ```javascript
   //common.js

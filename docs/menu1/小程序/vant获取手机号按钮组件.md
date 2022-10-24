@@ -7,6 +7,7 @@ title:vant获取手机号按钮封装
 ![](/vant获取手机号按钮组件/vant获取手机号按钮组件.png)
 
 ## 组件封装
+### index.wxml
 
 ```html
 <-- index.wxml -->
@@ -19,6 +20,7 @@ title:vant获取手机号按钮封装
 >自动获取
 </van-button>
 ```
+### index.js
 
 ```javascript
 // index.js
@@ -97,6 +99,7 @@ Component({
   }
 })
 ```
+### index.json
 
 ```json
 // index.json
@@ -107,12 +110,14 @@ Component({
 ```
 
 ## 调用
+### index.html
 ```html
 <--index.html-->
 <van-field value="{{form.mobile}}" input-align="right" label="手机号" placeholder="请输入手机号" type="number" maxlength="{{11}}" use-button-slot>
     <get-mobile slot="button" bind:getMobile="getMobile"></get-mobile>
 </van-field>
 ```
+### index.js
 
 ```javascript
   data: {
@@ -127,6 +132,7 @@ Component({
     })
   },
 ```
+### index.json
 
 ```json
 // index.json
