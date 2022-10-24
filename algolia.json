@@ -1,6 +1,6 @@
 {
     "index_name": "blog",
-    "start_urls": ["https://kai-web.github.io"],
+    "start_urls": ["https://kai-web.cn"],
     "rateLimit": 8,
     "maxDepth": 10,
     "selectors": {
