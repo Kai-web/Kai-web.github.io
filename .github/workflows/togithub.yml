@@ -41,5 +41,5 @@ jobs:
           git config user.email "${{ secrets.GIT_EMAIL }}"
           git add -A
           git commit -m 'deploy'
-          git push -f https://Kai-web:${{ secrets.ACCESS_TOKEN }}@github.com/Kai-web/blog.git master:gh-pages
+          git push -f https://Kai-web:${{ secrets.ACCESS_TOKEN }}@github.com/Kai-web/Kai-web.github.io.git master:gh-pages
           cd -
