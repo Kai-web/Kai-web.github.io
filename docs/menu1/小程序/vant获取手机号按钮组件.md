@@ -16,7 +16,6 @@ title:vant获取手机号按钮封装
   custom-style="width:170rpx;height:68rpx;font-weight:500;font-size:32rpx"
   open-type="getPhoneNumber"
   bind:getphonenumber="getPhoneNumber"
-  disabled="{{pending}}"
 >自动获取
 </van-button>
 ```
