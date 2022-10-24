@@ -19,10 +19,11 @@ jobs:
         uses: actions/checkout@main
 
      # 使用的node版本   
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@main
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          node-version:  ${{ matrix.node }}
+          node-version: 16
+          registry-url: https://registry.npmjs.org
       
      # 执行安装
       - name: Install dependencies
