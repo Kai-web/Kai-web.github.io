@@ -1,5 +1,5 @@
 {
-    "index_name": "blog",
+    "index_name": "vitepress-blog",
     "start_urls": ["https://kai-web.cn"],
     "rateLimit": 8,
     "maxDepth": 10,
