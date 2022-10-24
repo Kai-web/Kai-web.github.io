@@ -43,3 +43,19 @@ jobs:
           git commit -m 'deploy'
           git push -f https://Kai-web:${{ secrets.ACCESS_TOKEN }}@github.com/Kai-web/Kai-web.github.io.git master:gh-pages
           cd -
+
+    # 搜索
+     algolia:
+      needs: deploy
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: Get the content of algolia.json as config
+          id: algolia_config
+          run: echo "::set-output name=config::$(cat algolia.json | jq -r tostring)"
+        - name: Push indices to Algolia
+          uses: signcl/docsearch-scraper-action@master
+          env:
+            APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
+            API_KEY: ${{ secrets.ADMIN_API_KEY }}
+            CONFIG: ${{ steps.algolia_config.outputs.config }}
