@@ -19,7 +19,7 @@ export default [
             { text: '腾讯逆解析坐标封装', link: `${commonPath}/小程序/腾讯逆解析坐标封装.md` },
             { text: '预览PDF文档封装', link: `${commonPath}/小程序/预览PDF文档封装.md` },
             { text: 'vant获取手机号按钮组件', link: `${commonPath}/小程序/vant获取手机号按钮组件.md` },
-            { text: '输入姓名添加特殊字符组件', link: `${commonPath}/小程序/输入姓名添加特殊字符组件.md` },
+            { text: '姓名添加特殊字符组件(vant)', link: `${commonPath}/小程序/姓名添加特殊字符组件(vant).md` },
             { text: '小程序page模版', link: `${commonPath}/小程序/小程序page模版.md` },
             { text: '小程序components模板', link: `${commonPath}/小程序/小程序components模板.md` },
         ]
