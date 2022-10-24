@@ -25,37 +25,24 @@ features:
     title: 小程序
     details: 可选 “多页应用” 或 “库” 模式的预配置 Rollup 构建
   - icon: 🔩
-    title: 思维导图
+    title: Git
     details: 使用 Markdown 中 Vue 的所有功能自定义网站。
   - icon: 🔑
-    title: WebStorm编辑器
+    title: 思维导图
     details: 使用真正的 SSG + SPA 架构。页面加载时静态。
 ---
 
 <script setup>
   import { onMounted } from 'vue'
+  import menu1Sidebar from "./.vitepress/menu1Sidebar";
   // features跳转
   onMounted(() => {
       const cards = document.getElementsByTagName('article')
       for (let i=0; i<cards.length; i++){ 
         cards[i].classList.add('article')
-        let url = ''
-        switch(i){
-          case 0:
-            url = '/menu1/Vue2/Vue页面模版.html'
-            break;
-          case 1:
-            url = '/menu1/小程序/小程序components模板.html'
-            break;
-          case 2:
-            url = '/menu1/思维导图/Git操作.html'
-            break;
-          case 3:
-            url = '/menu1/WebStorm编辑器/常用快捷键.html'
-            break;
-        }
+        let title = cards[i].childNodes[1].innerHTML
         cards[i].addEventListener('click',()=> {
-          window.location.replace(url)
+          window.location.replace(menu1Sidebar.find(x => x.text === title).items[0].link.replace(/.md/g,'.html'))
         })
       }
     })

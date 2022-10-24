@@ -590,7 +590,7 @@ postcss@^8.1.10:
 
 postcss@^8.4.16:
   version "8.4.18"
-  resolved "https://registry.npmmirror.com/postcss/-/postcss-8.4.18.tgz#6d50046ea7d3d66a85e0e782074e7203bc7fbca2"
+  resolved "https://registry.npmmirror.com/postcss/-/postcss-8.4.18.tgz"
   integrity sha512-Wi8mWhncLJm11GATDaQKobXSNEYGUHeQLiQqDFG1qQ5UTDPTEvKw0Xt5NsTpktGTwLps3ByrWsBrG0rB8YQ9oA==
   dependencies:
     nanoid "^3.3.4"
@@ -666,10 +666,10 @@ vitepress-plugin-nprogress@^0.0.1:
   dependencies:
     nprogress "^0.2.0"
 
-vitepress@^1.0.0-alpha.19:
-  version "1.0.0-alpha.20"
-  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-alpha.20.tgz"
-  integrity sha512-8WXPQbWsoAckdS9FqhZ8MQWLDhq6DQG8dhuEtwsZmPMYtl/ezRYWoV/8gJD0T0xUbz6O6vJ8Sddq7OvEwLFUFA==
+vitepress@^1.0.0-alpha.18:
+  version "1.0.0-alpha.22"
+  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-alpha.22.tgz#7f5da5a565f33a7d08af47a456f3af7411b5364d"
+  integrity sha512-IWqnAxMDNaiyl6Bz+/79l40Ho6xsjrqxRp/WZw0+5BXR0BTZbmHyhGtI3XrH6oSn8MisLPjCccikaj3mcmCoWg==
   dependencies:
     "@docsearch/css" "^3.2.1"
     "@docsearch/js" "^3.2.1"
