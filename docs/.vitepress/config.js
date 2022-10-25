@@ -19,12 +19,12 @@ export default {
     ],
   ],
   themeConfig: {
-    // 展示搜索框
-    algolia: {
-      appId: '4BG2APT558',
-      appKey: '00ffa62e0b4eeebee8c43041c6aa063b',
-      indexName: 'vitepress-blog',
-    },
+      // 展示搜索框
+      algolia: {
+        appId: '4BG2APT558',
+        apiKey: '00ffa62e0b4eeebee8c43041c6aa063b',
+        indexName: 'vitepress-blog'
+      },
       nav: [
           { text: '查看更多', link: '/menu1/WebStorm编辑器/常用快捷键.html', activeMatch: '/menu1/' }
       ],
