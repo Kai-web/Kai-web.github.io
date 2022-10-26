@@ -6,6 +6,7 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
+            { text: 'element动态设置日期选择范围', link: `${commonPath}/Vue2/element动态设置日期选择范围.md` },
             { text: 'Vue页面模版', link: `${commonPath}/Vue2/Vue页面模版.md` },
         ]
     },
