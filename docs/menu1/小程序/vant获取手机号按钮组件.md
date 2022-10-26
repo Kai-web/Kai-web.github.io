@@ -4,7 +4,7 @@ title:vant获取手机号按钮封装
 
 # vant获取手机号按钮封装
 
-![](/vant获取手机号按钮组件/vant获取手机号按钮组件.png)
+![](/小程序/vant获取手机号按钮组件.png)
 
 ## 组件封装
 ### index.wxml
