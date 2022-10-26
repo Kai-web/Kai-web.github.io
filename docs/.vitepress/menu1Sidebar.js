@@ -100,11 +100,12 @@ export default [
         ]
     },
     {
-        text: '前端环境',
+        text: '环境部署',
         collapsible: true,
         collapsed: true,
         items: [
-            { text: '环境搭建', link: `${commonPath}/前端环境/前端环境搭建.md` },
+            { text: 'Github Pages自动化部署', link: `${commonPath}/环境部署/Github Pages自动化部署.md` },
+            { text: '环境搭建', link: `${commonPath}/环境部署/前端环境搭建.md` },
         ]
     },
     {
