@@ -4,6 +4,8 @@ title: vantDialog未通过校验阻止关闭
 
 # vantDialog未通过校验阻止关闭
 
+![](/小程序/vantDialog未通过校验阻止关闭.gif)
+
 ```html
   <van-dialog
     use-slot
