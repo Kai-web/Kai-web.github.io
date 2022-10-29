@@ -15,6 +15,7 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
+            { text: 'vantDialog未通过校验阻止关闭', link: `${commonPath}/小程序/vantDialog未通过校验阻止关闭.md` },
             { text: '全局监听网络状态', link: `${commonPath}/小程序/全局监听网络状态.md` },
             { text: '获取授权和定位封装', link: `${commonPath}/小程序/获取授权和定位封装.md` },
             { text: '腾讯逆解析坐标封装', link: `${commonPath}/小程序/腾讯逆解析坐标封装.md` },
