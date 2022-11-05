@@ -35,6 +35,7 @@ export default [
         items: [
             { text: '常用命令', link: `${commonPath}/Git/常用命令.md` },
             { text: '清空git远程仓库', link: `${commonPath}/Git/清空git远程仓库.md` },
+            { text: '代码提交', link: `${commonPath}/Git/代码提交.md` },
         ]
     },
     {
