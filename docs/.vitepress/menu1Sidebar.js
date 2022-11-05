@@ -29,6 +29,14 @@ export default [
         ]
     },
     {
+        text: 'JS片段',
+        collapsible: true,
+        collapsed: true,
+        items: [
+            { text: 'JS常用片段', link: `${commonPath}/JS片段/JS常用片段.md` },
+        ]
+    },
+    {
         text: 'Git',
         collapsible: true,
         collapsed: true,
