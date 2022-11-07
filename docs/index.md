@@ -57,7 +57,10 @@ features:
     }
     .article:hover {
       cursor: pointer;
-      transform: scale(1.02);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow, transform;
+      transition-property: box-shadow, transform;
       -webkit-box-shadow: #ccc 0px 10px 10px;
       -moz-box-shadow: #ccc 0px 10px 10px;
       box-shadow: #ccc 0px 10px 10px;
