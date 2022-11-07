@@ -17,8 +17,18 @@ const someArr = [false, true, false, true, false]
 const someArr2 = someArr.some((bol, index, arr) => bol)
 console.log(someArr2)     true
 
-let userInfo = wx.getStorageSync("userInfo");
-let roles = userInfo.roles
+let roles = [
+  {
+    description: "普通用户"
+    id: "001"
+    name: "USER"
+  },
+  {
+    description: "专家"
+    id: "002"
+    name: "EXPERT"
+  }
+]
 let isExpert = roles.some(item => item.description === '专家')
 console.log(isExpert === ture);
 
