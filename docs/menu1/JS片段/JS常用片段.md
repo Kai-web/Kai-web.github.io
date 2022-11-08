@@ -56,7 +56,6 @@ const everyArr = [false, true, false, true, false]
 // 配合箭头函数，需要所有为true，才返回true，否则返回false
 const everyArr2 = everyArr.every((bol, index, arr) => bol)
 console.log(everyArr2)
-
 ```
 
 ## includes
@@ -72,5 +71,15 @@ console.log(isKobe) // true
 if (['png', 'jpeg', 'jpg', 'gif'].includes(x)) {
   //下一步
 }
+```
 
+## slice
+*  slice方法只需将复数作为参数传递，它就会从最后一个索引开始对数组进行切片
+*  slice不会改变原始数组
+
+```javascript
+// 获取数组最后一个元素
+let arr = [1, 3, 5, 7, 9, 0]
+console.log(arr.slice(-1))    // [0]
+console.log(arr.slice(-3))    // [7, 9, 0]
 ```
