@@ -94,3 +94,15 @@ console.log(arr.indexOf('张三')) // 5
 console.log(arr.indexOf(3)) // 1
 console.log(arr.indexOf(3)) // -1
 ```
+
+## 数组反转顺序(字符串)
+
+*   split 将字符串进行分割成多个字符串数组
+*   reverse 颠倒数组中元素的顺序
+*   join 把数组中的所有元素放入一个字符串
+
+```javascript
+let coord = "123.1,231.2"
+location = coord.split(',').reverse().join()
+console.log(location)   // "231.2,123.1"
+```
