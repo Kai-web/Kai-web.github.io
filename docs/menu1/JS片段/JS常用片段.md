@@ -71,6 +71,15 @@ console.log(isKobe) // true
 if (['png', 'jpeg', 'jpg', 'gif'].includes(x)) {
   //下一步
 }
+
+if(includeArr.includes('科比')) {
+  ...
+}
+
+const nameArr = ['张三', '李四', '王五']
+const stationArr = ['张三', '李四']
+this.station = !!stationArr.find(item => nameArr.includes(item))
+console.log(this.station)     // true
 ```
 
 ## slice
@@ -95,7 +104,7 @@ console.log(arr.indexOf(3)) // 1
 console.log(arr.indexOf(3)) // -1
 ```
 
-## 数组反转顺序(字符串)
+## 调换字符串位置
 
 *   split 将字符串进行分割成多个字符串数组
 *   reverse 颠倒数组中元素的顺序
@@ -113,7 +122,6 @@ console.log(location)   // "231.2,123.1"
 ```javascript
 const obj = {}
 console.log(JSON.stringify(obj) === '{}')  // true
-
 ```
 
 *   Object.getOwnPropertyNames()
@@ -123,4 +131,18 @@ console.log(JSON.stringify(obj) === '{}')  // true
 ```javascript
 const obj = {}
 console.log(Object.getOwnPropertyNames(obj).length === 0)  // true
+```
+
+## 去除数组外部引号
+
+```javascript
+第一种方法(不推荐)
+// eslint-disable-next-line no-eval
+const Arrs = eval("['2021-10-23 18:28:31','2021-10-23 18:32:31']")
+console.log(Arrs)  // ["2021-10-23 18:28:31", "2021-10-23 18:32:31"]
+
+第二种方法(推荐)
+const Arrs = JSON.parse("['2021-10-23 18:28:31','2021-10-23 18:32:31']")
+console.log(Arrs)  // ["2021-10-23 18:28:31", "2021-10-23 18:32:31"]
+JSON.parse()可以把JSON规则的字符串转换为JSONObject
 ```
