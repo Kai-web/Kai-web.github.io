@@ -146,3 +146,24 @@ const Arrs = JSON.parse("['2021-10-23 18:28:31','2021-10-23 18:32:31']")
 console.log(Arrs)  // ["2021-10-23 18:28:31", "2021-10-23 18:32:31"]
 JSON.parse()可以把JSON规则的字符串转换为JSONObject
 ```
+
+## 获取数组中符合条件的元素
+
+*  **filter** 方法返回一个新数组，新数组中的元素是通过检查指定数组中符合条件的所有元素，不会对空数组进行检测、不会改变原始数组
+*  **map** 方法返回一个新数组，按照原始数组元素顺序依次处理元素，不会对空数组进行检测，不会改变原始数组
+*  **find** 方法用于查找数组中符合条件的第一个元素，如果没有符合条件的元素，则返回undefined，不会对空数组进行检测，不会改变原始数组
+
+```javascript
+const foods = [
+  { name: '汉堡', group: 1 },
+  { name: '薯条', group: 1 },
+  { name: '咖啡', group: 1 },
+  { name: '可乐', group: 1 }
+]    
+
+const names = foods.filter(i=> i.group === 1).map(i => i.name)
+console.log(names) // ['汉堡','薯条','可乐']
+ 
+const humbugger = foods.find(i=> i.name === '汉堡' && i.group === 1)
+console.log(humbugger) // {name: '汉堡', group: 1}  
+```
