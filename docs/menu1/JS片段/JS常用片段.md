@@ -167,3 +167,36 @@ console.log(names) // ['汉堡','薯条','可乐']
 const humbugger = foods.find(i=> i.name === '汉堡' && i.group === 1)
 console.log(humbugger) // {name: '汉堡', group: 1}  
 ```
+
+## 数组中的元素通过时间排序
+
+```javascript
+const  list = [
+    {
+      title: '第一条消息',
+      createTime: "2020-04-01 13:40:06"
+    },
+    {
+      title: '第二条消息',
+      createTime: "2020-04-01 13:39:06"
+    },
+    {
+      title: '第三条消息',
+      createTime: "2020-04-01 13:40:06"
+    },
+     {
+      title: '第四条消息',
+      createTime: "2020-04-01 13:39:03"
+    }
+  ]
+  
+  //降序
+  list.sort((a, b)=> {
+    return b.createTime < a.createTime ? -1 : 1
+  })
+  
+  //升序
+  list.sort((a, b)=> {
+    return b.createTime < a.createTime ? 1 : -1
+  })
+```
