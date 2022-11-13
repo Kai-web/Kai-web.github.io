@@ -121,6 +121,21 @@ function comparisonArr (arr1, arr2) {
   return arr1.every(item => arr2.indexOf(item) > -1)
 }
 ```
+## 两个数组的相同项
+
+```javascript
+getArrEqual (arr1, arr2) {
+  const newArr = []
+  for (let i = 0; i < arr2.length; i++) {
+    for (let j = 0; j < arr1.length; j++) {
+      if (arr1[j] === arr2[i]) {
+        newArr.push(arr1[j])
+      }
+    }
+  }
+  return newArr
+},
+```
 ## 调换字符串位置
 
 *   split 将字符串进行分割成多个字符串数组
