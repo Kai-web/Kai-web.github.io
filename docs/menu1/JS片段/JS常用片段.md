@@ -250,3 +250,15 @@ console.log(valA); // "valA 的默认值"
 console.log(valB); // ""（空字符串虽然是假值，但不是 null 或者 undefined）
 console.log(valC); // 42
 ```
+## split判断分割
+
+*   当数据如果有逗号以逗号分割字符串,没逗号不使用split分割
+
+```javascript
+data: {
+  images: "https://www.xxxx.com/1234.jpg"
+  images: "https://www.xxxx.com/12345.jpg,https://www.xxxx.com/123456.jpg"
+}
+
+item.images = (item.images || '').split(',')
+```
