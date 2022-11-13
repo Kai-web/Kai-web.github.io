@@ -200,3 +200,53 @@ const  list = [
     return b.createTime < a.createTime ? 1 : -1
   })
 ```
+
+## 数组中对象添加新属性
+
+```javascript
+let person = [
+  { id: 1,name: 'vhen'},
+  { id: 2,name: 'json'}
+]
+
+let newArr = obj.map((item, index) => {
+  return Object.assign(item, { index: index })
+})
+```
+## 判断是否符合正则条件
+
+*  是否是超链接返回true或false
+
+```javascript
+const exp = /((https?|http):\/\/[^\s]*[-A-Z0-9+&@#\\/%?=~_|!:,.;]*[-A-Z0-9+&@#\\/%=~_|]*\.pdf)/g
+this.table.forEach(item => {
+  item.introductionLink = exp.test(item.introduction)
+    ? item.introduction.replace(exp, "<a target='_blank' href='$1'>$1</a>")
+    : item.introduction
+})
+```
+## 空值合并操作符（??）
+
+*   只有当左侧为`null`和`undefined`时，才会返回右侧的数
+
+*   空值合并操作符（??）是一个逻辑操作符，当左侧的操作数为 `null` 或者 `undefined` 时，返回其右侧操作数，否则返回左侧操作数。
+
+*   与逻辑或操作符（||）不同，逻辑或操作符会在左侧操作数为假值时返回右侧操作数。也就是说，如果使用 || 来为某些变量设置默认值，可能会遇到意料之外的行为。比如为假值（例如，'' 或 0）时。见下面的例子。
+
+```javascript
+let str = null || undefined
+let result = str ?? '你真好看'
+console.log(result)//你真好看
+
+const nullValue = null;
+const emptyText = ""; // 空字符串，是一个假值，Boolean("") === false
+const someNumber = 42;
+
+const valA = nullValue ?? "valA 的默认值";
+const valB = emptyText ?? "valB 的默认值";
+const valC = someNumber ?? 0;
+
+console.log(valA); // "valA 的默认值"
+console.log(valB); // ""（空字符串虽然是假值，但不是 null 或者 undefined）
+console.log(valC); // 42
+```
