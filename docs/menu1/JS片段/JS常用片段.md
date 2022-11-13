@@ -302,3 +302,17 @@ function comparisonArr (arr1, arr2) {
   return arr1.every(item => arr2.indexOf(item) > -1)
 }
 ```
+
+## 判断undefined, 判断null，判断isNaN
+
+*  undefined，null，isNaN返回空字符串，否则返回原值并转换为字符串
+
+```javascript
+function verIllegal (tmp) {
+  if((typeof(tmp) == "undefined") || (!tmp && typeof(tmp) != "undefined" && tmp != 0) || (!isNaN(tmp))) {
+    return ''
+  } else {
+    return tmp.toString()
+  }
+}
+```
