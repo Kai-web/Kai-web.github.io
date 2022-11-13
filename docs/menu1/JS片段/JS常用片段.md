@@ -291,3 +291,14 @@ isObjectValueEqual(a, b) {
     return true
 }
 ```
+
+## 判断两个数组是否相等
+
+```javascript
+function comparisonArr (arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false
+  }
+  return arr1.every(item => arr2.indexOf(item) > -1)
+}
+```
