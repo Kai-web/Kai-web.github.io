@@ -316,3 +316,19 @@ function verIllegal (tmp) {
   }
 }
 ```
+## 对象转数组
+
+![](image/image_it5TcuO2HX.png)
+
+```javascript
+let translate = {
+  香蕉: "Banana",
+  苹果: "Apple",
+  桃子: "Peach",
+  橘子: "Orange",
+}
+let dValue = []
+for (const i in translate) {
+  dValue.push({ name:i, value:translate[i] });
+}
+```
