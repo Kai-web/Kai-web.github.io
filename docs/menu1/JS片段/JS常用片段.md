@@ -262,3 +262,32 @@ data: {
 
 item.images = (item.images || '').split(',')
 ```
+## 判断两个对象是否相等
+
+```javascript
+var a ={"name":"lsx","age":12};
+var b ={"age":12,"name":"lsx"};
+
+isObjectValueEqual(a, b) {
+    var aProps = Object.getOwnPropertyNames(a);
+    var bProps = Object.getOwnPropertyNames(b);
+    if (aProps.length != bProps.length) {
+        return false;
+    }
+    for (var i = 0; i < aProps.length; i++) {
+        var propName = aProps[i]
+        var propA = a[propName]
+        var propB = b[propName]
+        if ((typeof (propA) === 'object')) {
+            if (this.isObjectValueEqual(propA, propB)) {
+                return true
+            } else {
+                return false
+            }
+        } else if (propA !== propB) {
+            return false
+        } else {}
+    }
+    return true
+}
+```
