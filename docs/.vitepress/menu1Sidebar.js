@@ -7,6 +7,7 @@ export default [
         collapsed: true,
         items: [
             { text: 'vue后台动态控制路由权限', link: `${commonPath}/Vue2/vue后台动态控制路由权限.md` },
+            { text: 'element-confirm提示Promise版', link: `${commonPath}/Vue2/element-confirm提示Promise版.md` },
             { text: 'element动态设置日期选择范围', link: `${commonPath}/Vue2/element动态设置日期选择范围.md` },
             { text: 'Vue页面模版', link: `${commonPath}/Vue2/Vue页面模版.md` },
         ]
