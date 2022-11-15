@@ -1,18 +1,14 @@
 ---
-title: vue后台动态控制路由权限（可单独控制二级菜单，三级菜单）
+title: vue后台动态控制路由权限（可单独控制二级菜单）
 ---
 
-# vue后台动态控制路由权限（可单独控制二级菜单，三级菜单）
+# vue后台动态控制路由权限（可单独控制二级菜单）
 
 ## 动态路由生成逻辑
 
-*   从 `@router` 读取 `asyncRoutes` 和 `constantRoutes`，获取用户角色 `roles`，判断 `roles` 是否包含 `admin`。
+*   从 `router`路由中 导入页面模块，获取用户角色 `roles`。
 
-*   如果 `roles` 是包含 `admin`，将过滤后的 `asyncRoutes` 保存到 `vuex` 中。
-
-*   如果 `roles`不包含 `admin`，那么遍历 `roles`，判断是否具有路由访问权限。如果不具备，继续遍历 `roles`。如果具备，判断路由是否包含 `children`。如果包含 `children`，遍历 `children`，过滤 `children`，更新 `tmp.children`，再传入判断路由是否包含 `children`。如果不包含 `children`，将路由存入 `res`，将过滤后的 `asyncRoutes` 保存到 `vuex `中。
-
-*   将过滤后的 `asyncRoutes` 保存到 `vuex` 中后，`asyncRoutes` 和 `constantRoutes` 进行合并。
+*   遍历 `roles`，判断是否具有路由访问权限。如果不具备，继续遍历 `roles`。如果具备，判断路由是否包含 `children`。如果包含 `children`，遍历 `children`，过滤 `children`，更新 `tmp.children`，再传入判断路由是否包含 `children`。如果不包含 `children`，将路由存入 `res`。
 
 
 
@@ -23,26 +19,22 @@ title: vue后台动态控制路由权限（可单独控制二级菜单，三级�
 *   生成动态路由的关键方法是 `premission.js` 中的 `generateRoutes` 方法，代码如下所示
 
 ```javascript
+import { test1, test2, test3, test4 } from '@/router'
+
 const actions = {
   generateRoutes ({ commit, rootState }, roles) {
     return new Promise(resolve => {
       let accessedRoutes = []
       // 超级管理员
       if (roles.includes('ADMIN')) {
-        // 切换账号
-        accessedRoutes = [...patrol, ...personnel, ...defaultRoutes, ...platform]
+        accessedRoutes = [...test1, ...test2, ...test3, ...test4]
       } else if (roles.includes('MANAGER')) {
         // 管理员
-        accessedRoutes = [...patrol, ...personnel, ...defaultRoutes, ...filterAsyncRoutes(platform, roles)]
-      } else if (roles.includes('OFFICER')) {
-        // 区域管理员
-        accessedRoutes = [...defaultRoutes, ...filterAsyncRoutes(platform, roles)]
-      } else if (roles.includes('DEFENDER')) {
-        // 工作人员
-        accessedRoutes = [...patrol, ...defaultRoutes]
+        accessedRoutes = [...test1, ...test2, ...test3, ...filterAsyncRoutes(test4, roles)]
       } else {
-        accessedRoutes = [...defaultRoutes]
+        accessedRoutes = [...test3]
       }
+       // 将路由保存到 vuex 中
       commit('SET_ROUTES', accessedRoutes)
       resolve(accessedRoutes)
     })
@@ -55,8 +47,27 @@ const actions = {
 ```javascript
 const mutations = {
   SET_ROUTES: (state, routes) => {
+    // 将 routes 保存到 state 中的 addRoutes
     state.addRoutes = routes
+    // 将 routes 集成到 src/router/index.js 中的 constantRoutes 中
     state.routes = constantRoutes.concat(routes)
+  }
+}
+```
+### 检查权限
+
+*   检查权限的方法 `hasPermission`，代码如下所示
+
+```javascript
+// 检查权限的方法
+const hasPermission = (roles, route) => {
+  // 检查路由是否包含 meta 和 meta.roles 属性
+  if (route.meta && route.meta.roles) {
+    // 判断 route.meta.roles 中是否包含用户角色 roles 中的任何一个权限，如果包含则返回 true
+    return roles.some(role => route.meta.roles.includes(role))
+  } else {
+    // 如果路由没有 meta 或 meta.roles 属性，则视为该路由不需要进行权限控制，所有用户对该路由可访问
+    return true
   }
 }
 ```
@@ -87,37 +98,51 @@ export const filterAsyncRoutes = (routes, roles) => {
   return res
 }
 ```
-
-### 检查权限
-
-*   检查权限的方法 `hasPermission`，代码如下所示
+### router路由
 
 ```javascript
-// 检查权限的方法
-const hasPermission = (roles, route) => {
-  // 检查路由是否包含 meta 和 meta.roles 属性
-  if (route.meta && route.meta.roles) {
-    // 判断 route.meta.roles 中是否包含用户角色 roles 中的任何一个权限，如果包含则返回 true
-    return roles.some(role => route.meta.roles.includes(role))
-  } else {
-    // 如果路由没有 meta 或 meta.roles 属性，则视为该路由不需要进行权限控制，所有用户对该路由可访问
-    return true
+// router/index.js
+export const test4 = [
+  {
+    path: '/test4',
+    redirect: '/test4/index1',
+    component: () => import('@/views/base.vue'),
+    meta: {
+      title: '测试模块',
+      icon: '测试模块',
+      sidebarVisible: true,
+      order: 4
+    },
+    children: [
+      {
+        path: 'index1',
+        name: 'Test4Index1',
+        component: () => import('@/views/test4/index1.vue'),
+        meta: {
+          title: '测试页面1',
+          roles: ['ADMIN', 'MANAGER']
+        }
+      },
+      {
+        path: 'index2',
+        name: 'Test4Index2',
+        component: () => import('@/views/test4/index2.vue'),
+        meta: {
+          title: '测试页面2',
+          roles: ['ADMIN', 'MANAGER']
+        }
+      }
+    ]
   }
-}
+]
 ```
 
-
-
-## 完整代码：`premission.js`
+## 完整代码：permission.js
 
 ```javascript
-import {
-  constantRoutes,
-  defaultRoutes,
-  patrol,
-  personnel,
-  platform
-} from '@/router'
+// store/modules/permission.js
+
+import { test1, test2, test3, test4 } from '@/router'
 
 // 检查权限的方法
 const hasPermission = (roles, route) => {
@@ -159,7 +184,9 @@ const state = {
 
 const mutations = {
   SET_ROUTES: (state, routes) => {
+     // 将 routes 保存到 state 中的 addRoutes
     state.addRoutes = routes
+     // 将 routes 集成到 src/router/index.js 中的 constantRoutes 中
     state.routes = constantRoutes.concat(routes)
   }
 }
@@ -170,151 +197,17 @@ const actions = {
       let accessedRoutes = []
       // 超级管理员
       if (roles.includes('ADMIN')) {
-        // 切换账号
-        accessedRoutes = [...patrol, ...personnel, ...defaultRoutes, ...platform]
+        accessedRoutes = [...test1, ...test2, ...test3, ...test4]
       } else if (roles.includes('MANAGER')) {
         // 管理员
-        accessedRoutes = [...patrol, ...personnel, ...defaultRoutes, ...filterAsyncRoutes(platform, roles)]
-      } else if (roles.includes('OFFICER')) {
-        // 区域管理员
-        accessedRoutes = [...defaultRoutes, ...filterAsyncRoutes(platform, roles)]
-      } else if (roles.includes('DEFENDER')) {
-        // 工作人员
-        accessedRoutes = [...patrol, ...defaultRoutes]
+        accessedRoutes = [...test1, ...test2, ...test3, ...filterAsyncRoutes(test4, roles)]
       } else {
-        accessedRoutes = [...defaultRoutes]
+        accessedRoutes = [...test3]
       }
+       // 将路由保存到 vuex 中
       commit('SET_ROUTES', accessedRoutes)
       resolve(accessedRoutes)
     })
-  }
-}
-
-export default {
-  namespaced: true,
-  state,
-  mutations,
-  actions
-}
-
-```
-
-
-
-##   完整代码：`user.js`
-
-```javascript
-import { login, logout, getInfo } from '@/api/user'
-import { getToken, setToken, removeToken } from '@/utils/auth'
-import router, { resetRouter } from '@/router'
-
-const state = {
-  token: getToken(),
-  name: '',
-  avatar: '',
-  introduction: '',
-  roles: []
-}
-
-const mutations = {
-  SET_TOKEN: (state, token) => {
-    state.token = token
-  },
-  SET_INTRODUCTION: (state, introduction) => {
-    state.introduction = introduction
-  },
-  SET_NAME: (state, name) => {
-    state.name = name
-  },
-  SET_AVATAR: (state, avatar) => {
-    state.avatar = avatar
-  },
-  SET_ROLES: (state, roles) => {
-    state.roles = roles
-  }
-}
-
-const actions = {
-  login({ commit }, userInfo) {
-    const { username, password } = userInfo
-    return new Promise((resolve, reject) => {
-      login({ username: username.trim(), password: password }).then(response => {
-        const { data } = response
-        commit('SET_TOKEN', data.token)
-        setToken(data.token)
-        resolve()
-      }).catch(error => {
-        reject(error)
-      })
-    })
-  },
-
-  getInfo({ commit, state }) {
-    return new Promise((resolve, reject) => {
-      getInfo(state.token).then(response => {
-        const { data } = response
-
-        if (!data) {
-          reject('Verification failed, please Login again.')
-        }
-
-        const { roles, name, avatar, introduction } = data
-
-        if (!roles || roles.length <= 0) {
-          reject('getInfo: roles must be a non-null array!')
-        }
-
-        commit('SET_ROLES', roles)
-        commit('SET_NAME', name)
-        commit('SET_AVATAR', avatar)
-        commit('SET_INTRODUCTION', introduction)
-        resolve(data)
-      }).catch(error => {
-        reject(error)
-      })
-    })
-  },
-
-  logout({ commit, state, dispatch }) {
-    return new Promise((resolve, reject) => {
-      logout(state.token).then(() => {
-        commit('SET_TOKEN', '')
-        commit('SET_ROLES', [])
-        removeToken()
-        resetRouter()
-
-        dispatch('tagsView/delAllViews', null, { root: true })
-
-        resolve()
-      }).catch(error => {
-        reject(error)
-      })
-    })
-  },
-
-  resetToken({ commit }) {
-    return new Promise(resolve => {
-      commit('SET_TOKEN', '')
-      commit('SET_ROLES', [])
-      removeToken()
-      resolve()
-    })
-  },
-
-  async changeRoles({ commit, dispatch }, role) {
-    const token = role + '-token'
-
-    commit('SET_TOKEN', token)
-    setToken(token)
-
-    const { roles } = await dispatch('getInfo')
-
-    resetRouter()
-
-    const accessRoutes = await dispatch('permission/generateRoutes', roles, { root: true })
-    router.addRoutes(accessRoutes)
-
-    dispatch('tagsView/delAllViews', null, { root: true })
   }
 }
 
