@@ -12,6 +12,7 @@ export default [
             { text: 'element-table 一行拆分多列', link: `${commonPath}/Vue2/element-table 一行拆分多列.md` },
             { text: 'element表头添加图标,悬浮内容', link: `${commonPath}/Vue2/element表头添加图标,悬浮内容.md` },
             { text: 'element动态设置日期选择范围', link: `${commonPath}/Vue2/element动态设置日期选择范围.md` },
+            { text: '侧边栏菜单渐变色', link: `${commonPath}/Vue2/侧边栏菜单渐变色.md` },
             { text: 'Vue页面模版', link: `${commonPath}/Vue2/Vue页面模版.md` },
         ]
     },
