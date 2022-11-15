@@ -34,8 +34,10 @@ features:
 
 <script setup>
   import { onMounted } from 'vue'
-  import menu1Sidebar from "./.vitepress/menu1Sidebar";
+  alert('站点部署在Gihub上，国内访问较慢，请耐心等待。')
+
   // features跳转
+  import menu1Sidebar from "./.vitepress/menu1Sidebar";
   onMounted(() => {
       const cards = document.getElementsByTagName('article')
       for (let i=0; i<cards.length; i++){ 
