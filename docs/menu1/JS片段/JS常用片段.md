@@ -156,6 +156,37 @@ getArrEqual (arr1, arr2) {
   return newArr
 },
 ```
+
+## 过滤数据或提取数据
+
+*   多用于接口传参时去除不需要的参数
+
+```javascript
+data(){
+  return {
+    form:{
+      name: '商品名称',
+      id: '订单编号',
+      nickName: '商品别名',
+      num: '商品数量',
+      price:'价格',
+      tag: '0' // 1 表示特价  0 表示无特价
+    },
+  }
+},
+
+const noRequired = ['tag', 'nickName'] //不需要的字段
+const formData = Object.keys(this.form)
+  .filter(each => !noRequired.includes(each))
+  .reduce((acc, key) => ((acc[key] = this.form[key]), acc), {})
+```
+![](/JS片段/过滤数据或提取数据1.png)
+
+```javascript
+const formData = JSON.parse(JSON.stringify(this.form, ['nickName', 'price']))
+```
+![](/JS片段/过滤数据或提取数据2.png)
+
 ## 调换字符串位置
 
 *   split 将字符串进行分割成多个字符串数组
