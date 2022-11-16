@@ -8,8 +8,10 @@ title: 后台管理存储获取Cookie
 npm i js-cookie
 ```
 
+## 封装
+
 ```javascript
-// auth.js
+// utils/auth.js
 // 引入 js-cookie包
 import Cookies from 'js-cookie'
 
@@ -30,5 +32,24 @@ export function getCookie (TokenKey) {
 // 移除Cookie
 export function removeCookie (TokenKey) {
   return Cookies.remove(TokenKey)
+}
+```
+
+## 调用
+
+```javascript
+// 其他页面调用
+import { setCookie, getCookie, removeCookie } from '@/utils/auth'
+
+// 获取Cookie
+const Token = getCookie('sddatok')
+
+// 设置Cookie
+setCookie('token',data.refresh_token)
+
+// 清除Cookie
+logout ({ commit, rootState }) {
+  removeCookie('Token')
+  resetRouter()
 }
 ```
