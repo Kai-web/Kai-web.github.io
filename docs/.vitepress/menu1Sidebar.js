@@ -13,6 +13,7 @@ export default [
             { text: 'element表头添加图标,悬浮内容', link: `${commonPath}/Vue2/element表头添加图标,悬浮内容.md` },
             { text: 'element动态设置日期选择范围', link: `${commonPath}/Vue2/element动态设置日期选择范围.md` },
             { text: '侧边栏菜单渐变色', link: `${commonPath}/Vue2/侧边栏菜单渐变色.md` },
+            { text: '后台管理存储获取Cookie', link: `${commonPath}/Vue2/后台管理存储获取Cookie.md` },
             { text: '父组件调用子组件方法', link: `${commonPath}/Vue2/父组件调用子组件方法.md` },
             { text: 'Vue页面模版', link: `${commonPath}/Vue2/Vue页面模版.md` },
         ]
