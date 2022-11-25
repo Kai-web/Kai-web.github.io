@@ -15,6 +15,7 @@ export default [
             { text: 'element动态设置日期选择范围', link: `${commonPath}/Vue2/element动态设置日期选择范围.md` },
             { text: 'element月份选择器隐藏年份', link: `${commonPath}/Vue2/element月份选择器隐藏年份.md` },
             { text: '修改el-tooltip宽度', link: `${commonPath}/Vue2/修改el-tooltip宽度.md` },
+            { text: '输入框自动填充背景色问题', link: `${commonPath}/Vue2/输入框自动填充背景色问题.md` },
             { text: '侧边栏菜单渐变色', link: `${commonPath}/Vue2/侧边栏菜单渐变色.md` },
             { text: '后台管理存储获取Cookie', link: `${commonPath}/Vue2/后台管理存储获取Cookie.md` },
             { text: '父组件调用子组件方法', link: `${commonPath}/Vue2/父组件调用子组件方法.md` },
