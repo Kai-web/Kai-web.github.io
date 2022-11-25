@@ -11,7 +11,11 @@ title: 修改el-tooltip宽度
 
 <style lang="less">
   .el-tooltip__popper {
-    max-width: 20%;
+    max-width: 40%;
+  }
+  .el-textarea__inner {
+    border-radius: 0;
+    font-family: none;
   }
 </style>
 ```

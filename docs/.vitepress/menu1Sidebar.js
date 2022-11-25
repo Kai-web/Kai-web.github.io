@@ -15,6 +15,7 @@ export default [
             { text: 'element动态设置日期选择范围', link: `${commonPath}/Vue2/element动态设置日期选择范围.md` },
             { text: 'element月份选择器隐藏年份', link: `${commonPath}/Vue2/element月份选择器隐藏年份.md` },
             { text: '修改el-tooltip宽度', link: `${commonPath}/Vue2/修改el-tooltip宽度.md` },
+            { text: 'el-input为number时右侧箭头', link: `${commonPath}/Vue2/el-input为number时右侧箭头.md` },
             { text: '防止dialog弹窗超出视窗', link: `${commonPath}/Vue2/防止dialog弹窗超出视窗.md` },
             { text: '滚动条样式美化(不兼容火狐和IE)', link: `${commonPath}/Vue2/滚动条样式美化(不兼容火狐和IE).md` },
             { text: '输入框自动填充背景色问题', link: `${commonPath}/Vue2/输入框自动填充背景色问题.md` },
