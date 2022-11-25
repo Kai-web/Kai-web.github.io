@@ -30,6 +30,7 @@ export default [
         collapsible: true,
         collapsed: true,
         items: [
+            { text: 'wxs的使用', link: `${commonPath}/小程序/wxs的使用.md` },
             { text: 'vant开始结束日期选择器组件', link: `${commonPath}/小程序/vant开始结束日期选择器组件.md` },
             { text: 'vantDialog未通过校验阻止关闭', link: `${commonPath}/小程序/vantDialog未通过校验阻止关闭.md` },
             { text: '全局监听网络状态', link: `${commonPath}/小程序/全局监听网络状态.md` },
