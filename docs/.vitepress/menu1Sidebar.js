@@ -9,6 +9,7 @@ export default [
             { text: 'vue后台动态控制路由权限', link: `${commonPath}/Vue2/vue后台动态控制路由权限.md` },
             { text: '管道符的使用', link: `${commonPath}/Vue2/管道符的使用.md` },
             { text: 'computed计算属性的使用', link: `${commonPath}/Vue2/computed计算属性的使用.md` },
+            { text: '接口传值时字段为空不传该字段', link: `${commonPath}/Vue2/接口传值时字段为空不传该字段.md` },
             { text: 'element-confirm提示Promise版', link: `${commonPath}/Vue2/element-confirm提示Promise版.md` },
             { text: 'element-table 一行拆分多列', link: `${commonPath}/Vue2/element-table 一行拆分多列.md` },
             { text: 'element表头添加图标,悬浮内容', link: `${commonPath}/Vue2/element表头添加图标,悬浮内容.md` },
