@@ -12,6 +12,7 @@ export default [
             { text: '接口传值时字段为空不传该字段', link: `${commonPath}/Vue2/接口传值时字段为空不传该字段.md` },
             { text: 'element-confirm提示Promise版', link: `${commonPath}/Vue2/element-confirm提示Promise版.md` },
             { text: 'element-table 一行拆分多列', link: `${commonPath}/Vue2/element-table 一行拆分多列.md` },
+            { text: 'element表格动态列排序错乱', link: `${commonPath}/Vue2/element表格动态列排序错乱.md` },
             { text: 'element表头添加图标,悬浮内容', link: `${commonPath}/Vue2/element表头添加图标,悬浮内容.md` },
             { text: 'element动态设置日期选择范围', link: `${commonPath}/Vue2/element动态设置日期选择范围.md` },
             { text: 'element月份选择器隐藏年份', link: `${commonPath}/Vue2/element月份选择器隐藏年份.md` },
