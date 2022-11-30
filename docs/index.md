@@ -18,18 +18,15 @@ hero:
       link: https://github.com/Kai-web
 
 features:
-  - icon: 🛠️
-    title: Vue2
-    details: 借助Markdown，帮助您专注于编写和部署。
-  - icon: 📦
-    title: 小程序
-    details: 可选 “多页应用” 或 “库” 模式的预配置 Rollup 构建
-  - icon: 🔩
-    title: Git
-    details: 使用 Markdown 中 Vue 的所有功能自定义网站。
-  - icon: 🔑
-    title: 思维导图
-    details: 使用真正的 SSG + SPA 架构。页面加载时静态。
+  - icon: ⚡️
+    title: 博客
+    details: 和大家平常见到的常规博客或随笔一样，可能偶尔一个小时或半天的时间输出一小块内容。碎片化、结构化、体系化的个人知识库。
+  - icon: 💡
+    title: 随笔
+    details: 更多则是自己平常通过视频教程，文档等学习做的笔记，更多是初次接触某个领域所做的笔记，相对来说更多带有自己的思考和理解。
+  - icon: 🖖
+    title: 记录
+    details: 学习优秀的开源作品，同时将学习到的知识记录下来，梳理所学，便于记录的内容被再次利用，不用再担心掌握的知识无迹可寻。
 ---
 
 <script setup>
@@ -55,10 +52,9 @@ features:
         --vp-home-hero-name-color: transparent;
         --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
         --vp-home-hero-image-background-image: linear-gradient(-45deg,#bd34fe 50%,#4c09b9 50%);
-        --vp-home-hero-image-filter: blur(40px);
+        --vp-home-hero-image-filter: blur(80px);
     }
     .article:hover {
-      cursor: pointer;
       -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s;
       -webkit-transition-property: box-shadow, transform;

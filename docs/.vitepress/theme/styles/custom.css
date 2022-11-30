@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
 }
-  
+
 pre, code, kbd, samp {
   font-family: var(--vp-font-family-mono);
 }
@@ -17,13 +17,19 @@ pre, code, kbd, samp {
   border-radius: 5px;
 }
 
+.VPButton.brand {
+  border: 1px solid #747bff !important;
+  background-color: #747bff !important;
+  color: #fff !important;
+}
+
 /* .VPFooter.has-sidebar {
   display: block !important;
 } */
 
   /* #app .Layout .VPSidebar {
   padding-left: 32px;
-  
+
   width: 280px;
 }
 #app .VPNav .container {
