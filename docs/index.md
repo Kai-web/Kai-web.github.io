@@ -56,7 +56,7 @@ features:
     }
     .article {
       margin-left: -6px;
-      box-shadow: 0 0 3px rgba(204,204,204,.8);
+      box-shadow: 0 0 3px rgba(204,204,204,.6);
     }
     .article:hover {
       -webkit-transition-duration: 0.3s;
