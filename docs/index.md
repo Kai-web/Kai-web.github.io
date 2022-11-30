@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 查看更多
-      link: '/menu1/WebStorm编辑器/常用快捷键'
+      link: '/思维导图/Git操作'
     - theme: alt
       text: 访问我的Github
       link: https://github.com/Kai-web
@@ -34,13 +34,13 @@ features:
 
 <script setup>
   import { onMounted } from 'vue'
-  alert('站点部署在Gihub上，国内访问较慢，请耐心等待。')
+  alert('站点部署在Gihub（搜索引擎无法收录），国内访问较慢，请耐心等待。')
 
   // features跳转
-  import menu1Sidebar from "./.vitepress/menu1Sidebar";
+  //import menu1Sidebar from "./.vitepress/menu1Sidebar";
   onMounted(() => {
       const cards = document.getElementsByTagName('article')
-      for (let i=0; i<cards.length; i++){ 
+      for (let i=0; i<cards.length; i++){
         cards[i].classList.add('article')
         let title = cards[i].childNodes[1].innerHTML
         cards[i].addEventListener('click',()=> {
