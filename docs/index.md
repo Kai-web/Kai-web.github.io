@@ -31,7 +31,7 @@ features:
 
 <script setup>
   import { onMounted } from 'vue'
-  alert('站点部署在Gihub（搜索引擎无法收录），国内访问较慢，请耐心等待。')
+  alert('站点部署在Github (搜索引擎无法收录)，国内访问较慢，请耐心等待。')
 
   // features跳转
   //import menu1Sidebar from "./.vitepress/menu1Sidebar";
