@@ -54,13 +54,17 @@ features:
         --vp-home-hero-image-background-image: linear-gradient(-45deg,#bd34fe 50%,#4c09b9 50%);
         --vp-home-hero-image-filter: blur(80px);
     }
+    .article {
+      margin-left: -6px;
+      box-shadow: 0 0 3px rgba(204,204,204,.8);
+    }
     .article:hover {
       -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s;
       -webkit-transition-property: box-shadow, transform;
       transition-property: box-shadow, transform;
-      -webkit-box-shadow: #ccc 0px 10px 10px;
-      -moz-box-shadow: #ccc 0px 10px 10px;
-      box-shadow: #ccc 0px 10px 10px;
+      -webkit-box-shadow: #ccc 0px 0px 5px 5px;
+      -moz-box-shadow: #ccc 0px 0px 5px 5px;
+      box-shadow: #ccc 0px 0px 5px 5px;
     }
 </style>
