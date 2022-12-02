@@ -45,6 +45,7 @@ export const miniProgram = [
     items: [
       {text: 'wxs的使用', link: `${commonMiniProgram}/wxs的使用.md`},
       {text: '多个请求完成后在取消loading', link: `${commonMiniProgram}/多个请求完成后在取消loading.md`},
+      {text: '详情页返回列表页更新某条数据', link: `${commonMiniProgram}/详情页返回列表页更新某条数据.md`},
       {text: 'vant开始结束日期选择器组件', link: `${commonMiniProgram}/vant开始结束日期选择器组件.md`},
       {text: 'vantDialog未通过校验阻止关闭', link: `${commonMiniProgram}/vantDialog未通过校验阻止关闭.md`},
       {text: '全局监听网络状态', link: `${commonMiniProgram}/全局监听网络状态.md`},
