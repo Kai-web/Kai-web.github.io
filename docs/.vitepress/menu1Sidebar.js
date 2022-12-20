@@ -13,6 +13,7 @@ export const vueFragment = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: 'Echarts封装思路', link: `${commonVue}/Echarts封装思路.md`},
       {text: 'vue后台动态控制路由权限', link: `${commonVue}/vue后台动态控制路由权限.md`},
       {text: '管道符的使用', link: `${commonVue}/管道符的使用.md`},
       {text: 'computed计算属性的使用', link: `${commonVue}/computed计算属性的使用.md`},
