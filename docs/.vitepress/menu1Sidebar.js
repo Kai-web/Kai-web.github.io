@@ -13,6 +13,7 @@ export const vueFragment = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: 'Echarts封装思路(二)', link: `${commonVue}/Echarts封装思路(二).md`},
       {text: 'Echarts封装思路', link: `${commonVue}/Echarts封装思路.md`},
       {text: 'vue后台动态控制路由权限', link: `${commonVue}/vue后台动态控制路由权限.md`},
       {text: '管道符的使用', link: `${commonVue}/管道符的使用.md`},
@@ -103,6 +104,7 @@ export const OpenLayers = [
     collapsed: true,
     items: [
       {text: '正在填充', link: `${commonOpenLayers}/index.md`},
+      {text: '地理坐标系转换工具', link: `${commonOpenLayers}/地理坐标系转换工具.md`},
     ]
   }
 ]
