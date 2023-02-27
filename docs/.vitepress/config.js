@@ -29,7 +29,7 @@ export default {
           { text: '思维导图', link: '/思维导图/Git操作.html', activeMatch: '/思维导图/' },
           { text: 'JS片段', link: '/JS片段/简化arr.length.html', activeMatch: '/JS片段/' },
           { text: 'Vue2', link: '/Vue2/Echarts封装思路.html', activeMatch: '/Vue2/' },
-          { text: '小程序', link: '/小程序/wxs的使用.html', activeMatch: '/小程序/' },
+          { text: '小程序', link: '/小程序/Echarts封装.html', activeMatch: '/小程序/' },
           { text: 'OpenLayers', link: '/OpenLayers/index.html', activeMatch: '/OpenLayers/' },
           { text: 'Git', link: '/Git/常用命令.html', activeMatch: '/Git/' },
           { text: '环境部署', link: '/环境部署/Github Pages自动化部署.html', activeMatch: '/环境部署/' },
