@@ -45,6 +45,7 @@ export const miniProgram = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: 'Echarts封装', link: `${commonMiniProgram}/Echarts封装.md`},
       {text: 'wxs的使用', link: `${commonMiniProgram}/wxs的使用.md`},
       {text: '多个请求完成后在取消loading', link: `${commonMiniProgram}/多个请求完成后在取消loading.md`},
       {text: '详情页返回列表页更新某条数据', link: `${commonMiniProgram}/详情页返回列表页更新某条数据.md`},
