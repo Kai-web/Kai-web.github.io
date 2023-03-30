@@ -70,6 +70,8 @@ export const jsFragment = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: '递归获取对象属性', link: `${commonJsFragment}/递归获取对象属性.md`},
+      {text: '函数只执行一次', link: `${commonJsFragment}/函数只执行一次.md`},
       {text: '简化arr.length', link: `${commonJsFragment}/简化arr.length.md`},
       {text: '简化replace替换', link: `${commonJsFragment}/简化replace替换.md`},
       {text: '正则提取手机号', link: `${commonJsFragment}/正则提取手机号.md`},
