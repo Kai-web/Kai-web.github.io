@@ -60,7 +60,7 @@ nvm use xxxx
 
 * 更名后npm复制到对应node文件夹下
 
-![](/环境部署/nvm安装多个node版本/npm复制到对应文件夹)
+![](/环境部署/nvm安装多个node版本/npm复制到对应文件夹.png)
 
 * 将npm文件夹里面的bin目录下的npm和npm.cmd两个文件复制到对应node版本的根目录下
 
