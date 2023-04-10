@@ -131,6 +131,7 @@ export const environment = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: 'nvm安装多个node版本', link: `${commonEnvironment}/nvm安装多个node版本.md`},
       {text: 'Github Pages自动化部署', link: `${commonEnvironment}/Github Pages自动化部署.md`},
       {text: '环境搭建', link: `${commonEnvironment}/前端环境搭建.md`},
     ]
