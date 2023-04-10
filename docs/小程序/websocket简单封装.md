@@ -125,12 +125,14 @@ module.exports.closeWebSocket = closeWebSocket;
 const websocket = require('../../utils/websocket')
 
 // 连接WebSocket
-websocket.ws_connect(async (data) => {
-    if(data === '连接成功') {
-        //websocket发送消息
-        websocket.sendMsg(res, (data) => {})
-    }
-},
+if(!app.globalData.socketOpen) {
+    websocket.ws_connect(async (data) => {
+        if(data === '连接成功') {
+            //websocket发送消息
+            websocket.sendMsg(res, (data) => {})
+        }
+    },
+}
 
 // 结束WebSocket连接
 websocket.closeWebSocket()
