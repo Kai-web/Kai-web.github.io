@@ -19,8 +19,8 @@ pre, code, kbd, samp {
 
 .VPButton.brand {
   border: 1px solid #747bff !important;
-  background-color: #747bff !important;
-  color: #fff !important;
+  background-color: #646cff !important;
+  color: rgba(255, 255, 245, .86) !important;
 }
 
 /* .VPFooter.has-sidebar {
