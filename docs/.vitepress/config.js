@@ -28,7 +28,7 @@ export default {
       nav: [
           { text: '思维导图', link: '/思维导图/Git操作.html', activeMatch: '/思维导图/' },
           { text: 'JS片段', link: '/JS片段/递归获取对象属性.html', activeMatch: '/JS片段/' },
-          { text: 'Vue2', link: '/Vue2/Echarts封装思路.html', activeMatch: '/Vue2/' },
+          { text: 'Vue2', link: '/Vue2/使用百度地图设置中心点.html', activeMatch: '/Vue2/' },
           { text: '小程序', link: '/小程序/websocket简单封装.html', activeMatch: '/小程序/' },
           { text: 'OpenLayers', link: '/OpenLayers/index.html', activeMatch: '/OpenLayers/' },
           { text: 'Git', link: '/Git/常用命令.html', activeMatch: '/Git/' },

@@ -13,6 +13,7 @@ export const vueFragment = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: '使用百度地图设置中心点', link: `${commonVue}/使用百度地图设置中心点.md`},
       {text: 'Echarts封装思路(二)', link: `${commonVue}/Echarts封装思路(二).md`},
       {text: 'Echarts封装思路', link: `${commonVue}/Echarts封装思路.md`},
       {text: 'vue后台动态控制路由权限', link: `${commonVue}/vue后台动态控制路由权限.md`},
