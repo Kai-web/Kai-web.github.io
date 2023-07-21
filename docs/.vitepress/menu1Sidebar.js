@@ -109,9 +109,10 @@ export const OpenLayers = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: '根据坐标点绘制面', link: `${commonOpenLayers}/根据坐标点绘制面.md`},
       {text: '添加覆盖物和清除', link: `${commonOpenLayers}/添加覆盖物和清除.md`},
       {text: '点击区域高亮', link: `${commonOpenLayers}/点击区域高亮.md`},
-      {text: '添加图标', link: `${commonOpenLayers}/添加图标.md`},
+      {text: '添加图标(图片)', link: `${commonOpenLayers}/添加图标(图片).md`},
       {text: '设置图层的显示和隐藏', link: `${commonOpenLayers}/设置图层的显示和隐藏.md`},
       {text: '获取Feature和geom', link: `${commonOpenLayers}/获取Feature和geom.md`},
       {text: '行政边界添加样式', link: `${commonOpenLayers}/行政边界添加样式.md`},
