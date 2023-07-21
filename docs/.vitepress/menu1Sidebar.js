@@ -109,6 +109,7 @@ export const OpenLayers = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: '根据坐标点绘制线', link: `${commonOpenLayers}/根据坐标点绘制线.md`},
       {text: '根据坐标点绘制面', link: `${commonOpenLayers}/根据坐标点绘制面.md`},
       {text: '添加覆盖物和清除', link: `${commonOpenLayers}/添加覆盖物和清除.md`},
       {text: '点击区域高亮', link: `${commonOpenLayers}/点击区域高亮.md`},
