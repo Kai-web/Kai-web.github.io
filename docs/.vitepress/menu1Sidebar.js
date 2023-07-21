@@ -118,6 +118,7 @@ export const OpenLayers = [
       {text: '设置图层的显示和隐藏', link: `${commonOpenLayers}/设置图层的显示和隐藏.md`},
       {text: '获取Feature和geom', link: `${commonOpenLayers}/获取Feature和geom.md`},
       {text: '行政边界添加样式', link: `${commonOpenLayers}/行政边界添加样式.md`},
+      {text: '初始化地图', link: `${commonOpenLayers}/初始化地图.md`},
       {text: 'OpenLayers基本使用', link: `${commonOpenLayers}/OpenLayers基本使用.md`},
       {text: '地理坐标系转换工具', link: `${commonOpenLayers}/地理坐标系转换工具.md`},
     ]
