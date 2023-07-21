@@ -109,6 +109,7 @@ export const OpenLayers = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: '获取Feature和geom', link: `${commonOpenLayers}/获取Feature和geom.md`},
       {text: '行政边界添加样式', link: `${commonOpenLayers}/行政边界添加样式.md`},
       {text: 'OpenLayers基本使用', link: `${commonOpenLayers}/OpenLayers基本使用.md`},
       {text: '地理坐标系转换工具', link: `${commonOpenLayers}/地理坐标系转换工具.md`},
