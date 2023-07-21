@@ -2,6 +2,8 @@
 title: 获取Feature和geom
 ---
 
+# 获取Feature和geom
+
 ## 点击地图获取Feature
 
 ```js
