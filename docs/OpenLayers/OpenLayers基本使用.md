@@ -6,7 +6,6 @@ title: OpenLayers基本使用
 ![](/OpenLayers/OpenLayers基本使用.png)
 
 
-# 安装OpenLayers
 
 ## 安装openLayers包
 
