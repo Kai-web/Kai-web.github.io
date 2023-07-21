@@ -109,6 +109,7 @@ export const OpenLayers = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: '添加图标', link: `${commonOpenLayers}/添加图标.md`},
       {text: '设置图层的显示和隐藏', link: `${commonOpenLayers}/设置图层的显示和隐藏.md`},
       {text: '获取Feature和geom', link: `${commonOpenLayers}/获取Feature和geom.md`},
       {text: '行政边界添加样式', link: `${commonOpenLayers}/行政边界添加样式.md`},
