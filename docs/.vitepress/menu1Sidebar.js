@@ -47,6 +47,7 @@ export const miniProgram = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: 'webview使用微信JSSDK', link: `${commonMiniProgram}/webview使用微信JSSDK.md`},
       {text: 'websocket简单封装', link: `${commonMiniProgram}/websocket简单封装.md`},
       {text: 'Echarts封装', link: `${commonMiniProgram}/Echarts封装.md`},
       {text: 'wxs的使用', link: `${commonMiniProgram}/wxs的使用.md`},
