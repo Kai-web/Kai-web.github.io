@@ -13,6 +13,7 @@ export const vueFragment = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: '浏览器加载进度条', link: `${commonVue}/浏览器加载进度条.md`},
       {text: '数字滚动组件', link: `${commonVue}/数字滚动组件.md`},
       {text: '使用百度地图设置中心点', link: `${commonVue}/使用百度地图设置中心点.md`},
       {text: 'Echarts封装思路(二)', link: `${commonVue}/Echarts封装思路(二).md`},
