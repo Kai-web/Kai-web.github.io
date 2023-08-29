@@ -96,6 +96,7 @@ export const jsFragment = [
       {text: '空值合并操作符', link: `${commonJsFragment}/空值合并操作符.md`},
       {text: 'split判断分割', link: `${commonJsFragment}/split判断分割.md`},
       {text: '对象转数组', link: `${commonJsFragment}/对象转数组.md`},
+      {text: 'Object.assign()', link: `${commonJsFragment}/Object.assign().md`},
       {text: 'Array.some', link: `${commonJsFragment}/Array.some.md`},
       {text: 'Array.every', link: `${commonJsFragment}/Array.every.md`},
       {text: 'includes', link: `${commonJsFragment}/includes.md`},
