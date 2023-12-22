@@ -48,7 +48,6 @@ export const miniProgram = [
     collapsible: true,
     collapsed: true,
     items: [
-      {text: 'url传参中的encodeURIComponent()', link: `${commonMiniProgram}/url传参中的encodeURIComponent().md`},
       {text: '全局监听globalData的属性变化', link: `${commonMiniProgram}/全局监听globalData的属性变化.md`},
       {text: 'mpvue小程序下拉选择器', link: `${commonMiniProgram}/mpvue小程序下拉选择器.md`},
       {text: '手机本地写入和读取数据', link: `${commonMiniProgram}/手机本地写入和读取数据.md`},
@@ -79,6 +78,7 @@ export const jsFragment = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: 'url传参中的encodeURIComponent()', link: `${commonJsFragment}/url传参中的encodeURIComponent().md`},
       {text: '递归获取对象属性', link: `${commonJsFragment}/递归获取对象属性.md`},
       {text: '函数只执行一次', link: `${commonJsFragment}/函数只执行一次.md`},
       {text: '简化arr.length', link: `${commonJsFragment}/简化arr.length.md`},
