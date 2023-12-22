@@ -29,7 +29,7 @@ export default {
           { text: '思维导图', link: '/思维导图/Git操作.html', activeMatch: '/思维导图/' },
           { text: 'JS片段', link: '/JS片段/url传参中的encodeURIComponent().html', activeMatch: '/JS片段/' },
           { text: 'Vue2', link: '/Vue2/浏览器加载进度条.html', activeMatch: '/Vue2/' },
-          { text: '小程序', link: '/小程序/mpvue小程序压缩vendor.js.html', activeMatch: '/小程序/' },
+          { text: '小程序', link: '/小程序/定时器防抖方法.html', activeMatch: '/小程序/' },
           { text: 'OpenLayers', link: '/OpenLayers/视口平移到所在坐标.html', activeMatch: '/OpenLayers/' },
           { text: 'Git', link: '/Git/常用命令.html', activeMatch: '/Git/' },
           { text: '环境部署', link: '/环境部署/nvm安装多个node版本.html', activeMatch: '/环境部署/' },
