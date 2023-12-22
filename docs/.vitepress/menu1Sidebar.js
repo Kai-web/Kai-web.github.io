@@ -48,6 +48,7 @@ export const miniProgram = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: 'mpvue小程序下拉选择器', link: `${commonMiniProgram}/mpvue小程序下拉选择器.md`},
       {text: '手机本地写入和读取数据', link: `${commonMiniProgram}/手机本地写入和读取数据.md`},
       {text: 'webview使用微信JSSDK', link: `${commonMiniProgram}/webview使用微信JSSDK.md`},
       {text: 'websocket简单封装', link: `${commonMiniProgram}/websocket简单封装.md`},
