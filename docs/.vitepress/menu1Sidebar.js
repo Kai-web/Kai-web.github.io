@@ -48,6 +48,7 @@ export const miniProgram = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: 'mpvue小程序压缩vendor.js', link: `${commonMiniProgram}/mpvue小程序压缩vendor.js.md`},
       {text: '全局监听globalData的属性变化', link: `${commonMiniProgram}/全局监听globalData的属性变化.md`},
       {text: 'mpvue小程序下拉选择器', link: `${commonMiniProgram}/mpvue小程序下拉选择器.md`},
       {text: '手机本地写入和读取数据', link: `${commonMiniProgram}/手机本地写入和读取数据.md`},
