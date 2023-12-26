@@ -3,10 +3,10 @@ import mdItCustomAttrs  from 'markdown-it-custom-attrs'
 
 export default {
   base: '/',
-  title: "🧠 前端加油站",
+  title: "🧠 今晚不熬夜",
   titleTemplate: '今晚不熬夜丶',
   // 会渲染成<meta>标签，SEO用
-  description: '前端加油站，学习开发日常记录',
+  description: '今晚不熬夜，学习开发日常记录',
   //图片预览(图片灯箱远程引入)
   head:[
     [
