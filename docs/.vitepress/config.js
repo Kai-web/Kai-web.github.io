@@ -68,7 +68,8 @@ export default {
         prev: '上一篇',
         next: '下一篇'
       },
-
+      // 取消主题切换
+      themePicker: false,
       footer: {
           message: 'Released under the MIT License.',
           copyright: `Copyright © 2022-${new Date().getFullYear()} Kai-web`

@@ -30,20 +30,37 @@ features:
 ---
 
 <script setup>
-  import { onMounted } from 'vue'
+  import { onMounted, onUnmounted } from 'vue'
   // alert('站点部署在Github (搜索引擎无法收录)，国内访问较慢，请耐心等待。')
 
   // features跳转
   //import menu1Sidebar from "./.vitepress/menu1Sidebar";
+  let loop
+  let canvasShow = false
+  onUnmounted(()=> {
+    const vpContent = document.querySelector('#VPContent');
+    vpContent.style.zIndex = '0';
+    // 清除生成的 canvas
+    cancelAnimationFrame(loop) // 停止动画循环
+    // 移除 canvas 元素
+    const canvas = document.getElementsByTagName('canvas')[0]
+    canvas.parentElement.removeChild(canvas)
+    canvasShow = false
+  })
   onMounted(() => {
-      const cards = document.getElementsByTagName('article')
-      for (let i=0; i<cards.length; i++){
-        cards[i].classList.add('article')
-        let title = cards[i].childNodes[1].innerHTML
-        cards[i].addEventListener('click',()=> {
-          window.location.replace(menu1Sidebar.find(x => x.text === title).items[0].link.replace(/.md/g,'.html'))
-        })
-      }
+    const cards = document.getElementsByTagName('article')
+    for (let i=0; i<cards.length; i++){
+      cards[i].classList.add('article')
+      let title = cards[i].childNodes[1].innerHTML
+      cards[i].addEventListener('click',()=> {
+        window.location.replace(menu1Sidebar.find(x => x.text === title).items[0].link.replace(/.md/g,'.html'))
+      })
+    }
+
+    const vpContent = document.querySelector('#VPContent');
+    const VPNavBarAppearance = document.querySelector('.VPNavBarAppearance');
+    vpContent.style.zIndex = '1';
+    VPNavBarAppearance.style.display = 'none';
 
       // Init Context
       let c = document.createElement('canvas').getContext('2d')
@@ -64,9 +81,9 @@ features:
       let depth = (vertexCount / oceanWidth * gridSize)
       let frame = 0
       let { sin, cos, tan, PI } = Math
-
+      canvasShow = true
       // Render loop
-      let loop = () => {
+      loop = () => {
         let rad = sin(frame / 100) * PI / 20
         let rad2 = sin(frame / 50) * PI / 10
         frame++
@@ -75,7 +92,9 @@ features:
           postctx.canvas.height = canvas.height = postctx.canvas.offsetHeight
         }
 
-        
+        if(!canvasShow) {
+          return
+        }
         c.fillStyle = `hsl(200deg, 100%, 2%)`
         c.fillRect(0, 0, canvas.width, canvas.height)
         c.save()
@@ -150,7 +169,6 @@ features:
         
         requestAnimationFrame(loop)
       }
-
       // Generating dots
       for (let i = 0; i < vertexCount; i++) {
         let x = i % oceanWidth
@@ -159,11 +177,9 @@ features:
         let offset = oceanWidth / 2
         vertices.push([(-offset + x) * gridSize, y * gridSize, z * gridSize])
       }
-
       loop()
     })
 </script>
-
 <style>
     :root {
         --vp-home-hero-name-color: transparent;
@@ -171,12 +187,8 @@ features:
         --vp-home-hero-image-background-image: linear-gradient(-45deg,#bd34fe 50%,#4c09b9 50%);
         --vp-home-hero-image-filter: blur(80px);
     }
-    /* 隐藏主题切换 */
-    .VPNavBarAppearance {
-      display: none !important;
-    }
-    .VPContent {
-      z-index: 1;
+    .DocSearch-Button {
+      border: 1px solid #fff;
     }
     /* 粒子特效 */
     canvas {
