@@ -48,6 +48,7 @@ export const miniProgram = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: '使用百度地图服务', link: `${commonMiniProgram}/使用百度地图服务.md`},
       {text: '定时器防抖方法', link: `${commonMiniProgram}/定时器防抖方法.md`},
       {text: 'mpvue小程序压缩vendor.js', link: `${commonMiniProgram}/mpvue小程序压缩vendor.js.md`},
       {text: '全局监听globalData的属性变化', link: `${commonMiniProgram}/全局监听globalData的属性变化.md`},
