@@ -75,6 +75,9 @@ const request = function (obj, showLoading = true) {
           title: err.errMsg,
           icon: 'none'
         })
+         if(app.globalData.loadingCount === 0){
+          wx.hideLoading()
+        }
         reject(err)
       },
     })
