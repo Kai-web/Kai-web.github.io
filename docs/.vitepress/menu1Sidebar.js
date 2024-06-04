@@ -48,6 +48,7 @@ export const miniProgram = [
     collapsible: true,
     collapsed: true,
     items: [
+      {text: '小程序版本更新检测', link: `${commonMiniProgram}/小程序版本更新检测.md`},
       {text: 'text-align-last对齐两端文本', link: `${commonMiniProgram}/text-align-last对齐两端文本.md`},
       {text: '小程序使用全局事件总线', link: `${commonMiniProgram}/小程序使用全局事件总线.md`},
       {text: '使用百度地图服务', link: `${commonMiniProgram}/使用百度地图服务.md`},
