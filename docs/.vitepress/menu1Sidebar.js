@@ -1,4 +1,4 @@
-const commonVue = '/Vue2';
+const commonVue = '/Vue2-3';
 const commonMiniProgram = '/小程序';
 const commonGit = '/Git';
 const commonMindMap = '/思维导图';
@@ -9,7 +9,7 @@ const commonOpenLayers = '/OpenLayers';
 
 export const vueFragment = [
   {
-    text: 'Vue2',
+    text: 'Vue2-3',
     collapsible: true,
     collapsed: true,
     items: [
