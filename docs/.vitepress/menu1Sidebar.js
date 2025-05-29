@@ -11,7 +11,7 @@ export const vueFragment = [
   {
     text: 'Vue3',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {text: '后台管理(五)：布局系统', link: `${commonVue}/后台管理(五)：布局系统.md`},
       {text: '后台管理(四)：认证权限', link: `${commonVue}/后台管理(四)：认证权限.md`},
@@ -23,7 +23,7 @@ export const vueFragment = [
   {
     text: 'Vue2',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {text: '浏览器加载进度条', link: `${commonVue}/浏览器加载进度条.md`},
       {text: '数字滚动组件', link: `${commonVue}/数字滚动组件.md`},
