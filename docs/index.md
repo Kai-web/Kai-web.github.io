@@ -4,8 +4,7 @@ layout: home
 hero:
   name: Wang Kaibing
   home: true
-  text: Hi, guys, this is my daily record!
-  tagline: 记录我的学习和编码。这是一个碎片化、结构化、体系化的个人知识库......
+  tagline: 记录我的学习和编码。这是一个碎片化、结构化、体系化的个人知识库...
   image:
     src: /logo.png
     alt: VitePress

@@ -9,7 +9,15 @@ const commonOpenLayers = '/OpenLayers';
 
 export const vueFragment = [
   {
-    text: 'Vue2-3',
+    text: 'Vue3',
+    collapsible: true,
+    collapsed: true,
+    items: [
+      {text: '后台管理(一)：项目搭建', link: `${commonVue}/后台管理(一)：项目搭建.md`},
+    ]
+  },
+  {
+    text: 'Vue2',
     collapsible: true,
     collapsed: true,
     items: [
