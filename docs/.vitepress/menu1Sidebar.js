@@ -13,6 +13,7 @@ export const vueFragment = [
     collapsible: true,
     collapsed: false,
     items: [
+      {text: '后台管理(六)：表格导出', link: `${commonVue}/后台管理(六)：表格导出.md`},
       {text: '后台管理(五)：布局系统', link: `${commonVue}/后台管理(五)：布局系统.md`},
       {text: '后台管理(四)：认证权限', link: `${commonVue}/后台管理(四)：认证权限.md`},
       {text: '后台管理(三)：状态管理', link: `${commonVue}/后台管理(三)：状态管理.md`},

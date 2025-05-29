@@ -19,10 +19,6 @@ export default {
     ],
   ],
   themeConfig: {
-    colorMode: {
-      preference: 'dark',  // 设置默认模式为黑暗模式
-      disableSwitch: true, // 可以设置为 true 来禁用模式切换
-    },
       // 展示搜索框
       algolia: {
         appId: '4BG2APT558',
@@ -32,7 +28,7 @@ export default {
       nav: [
           { text: '思维导图', link: '/思维导图/Git操作.html', activeMatch: '/思维导图/' },
           { text: 'JS片段', link: '/JS片段/url传参中的encodeURIComponent().html', activeMatch: '/JS片段/' },
-          { text: 'Vue2-3', link: '/Vue2-3/后台管理(五)：布局系统.html', activeMatch: '/Vue2-3/' },
+          { text: 'Vue2-3', link: '/Vue2-3/后台管理(六)：表格导出.html', activeMatch: '/Vue2-3/' },
           { text: '小程序', link: '/小程序/版本更新检测.html', activeMatch: '/小程序/' },
           { text: 'OpenLayers', link: '/OpenLayers/视口平移到所在坐标.html', activeMatch: '/OpenLayers/' },
           { text: 'Git', link: '/Git/常用命令.html', activeMatch: '/Git/' },

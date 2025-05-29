@@ -10,5 +10,10 @@ export default {
     const { app } = ctx;
     vitepressNprogress(ctx)
     app.component("confetti", confetti);
+    // 设置默认为暗色模式
+    if (typeof window !== 'undefined') {
+      const html = document.querySelector('html')
+      html.classList.add('dark')
+    }
   }
 }
