@@ -19,6 +19,10 @@ export default {
     ],
   ],
   themeConfig: {
+    colorMode: {
+      preference: 'dark',  // 设置默认模式为黑暗模式
+      disableSwitch: true, // 可以设置为 true 来禁用模式切换
+    },
       // 展示搜索框
       algolia: {
         appId: '4BG2APT558',
