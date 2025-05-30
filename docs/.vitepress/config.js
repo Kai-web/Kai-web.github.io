@@ -29,7 +29,7 @@ export default {
           { text: '思维导图', link: '/思维导图/Git操作.html', activeMatch: '/思维导图/' },
           { text: 'JS片段', link: '/JS片段/url传参中的encodeURIComponent().html', activeMatch: '/JS片段/' },
           { text: 'Vue2-3', link: '/Vue2-3/后台管理(六)：表格导出.html', activeMatch: '/Vue2-3/' },
-          { text: 'App-小程序', link: '/App-小程序/APP应用(四)：App跳转小程序.html', activeMatch: '/App-小程序/' },
+          { text: 'App-小程序', link: '/App-小程序/APP应用(五)：GIS地图-renderjs.html', activeMatch: '/App-小程序/' },
           { text: 'OpenLayers', link: '/OpenLayers/视口平移到所在坐标.html', activeMatch: '/OpenLayers/' },
           { text: 'Git', link: '/Git/常用命令.html', activeMatch: '/Git/' },
           { text: '环境部署', link: '/环境部署/nvm安装多个node版本.html', activeMatch: '/环境部署/' },
