@@ -153,7 +153,10 @@ export const OpenLayers = [
     collapsible: true,
     collapsed: false,
     items: [
-      {text: '视口平移到所在坐标', link: `${commonOpenLayers}/视口平移到所在坐标.md`},
+      {text: 'mapbox批量加载点', link: `${commonOpenLayers}/mapbox批量加载点.md`},
+      {text: 'mapbox自定义弹窗', link: `${commonOpenLayers}/mapbox自定义弹窗.md`},
+      {text: 'mapbox常用方法封装', link: `${commonOpenLayers}/mapbox常用方法封装.md`},
+      {text: 'mapbox地图初始化', link: `${commonOpenLayers}/mapbox地图初始化.md`},
     ]
   },
   {

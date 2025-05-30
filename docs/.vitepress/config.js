@@ -30,7 +30,7 @@ export default {
           { text: 'JS片段', link: '/JS片段/url传参中的encodeURIComponent().html', activeMatch: '/JS片段/' },
           { text: 'Vue2-3', link: '/Vue2-3/后台管理(六)：表格导出.html', activeMatch: '/Vue2-3/' },
           { text: 'App-小程序', link: '/App-小程序/APP应用(十)：App更新.html', activeMatch: '/App-小程序/' },
-          { text: 'Gis地图', link: '/OpenLayers/视口平移到所在坐标.html', activeMatch: '/OpenLayers/' },
+          { text: 'Gis地图', link: '/OpenLayers/mapbox批量加载点.html', activeMatch: '/OpenLayers/' },
           { text: 'Git', link: '/Git/常用命令.html', activeMatch: '/Git/' },
           { text: '环境部署', link: '/环境部署/nvm安装多个node版本.html', activeMatch: '/环境部署/' },
           { text: 'WebStorm编辑器', link: '/WebStorm编辑器/常用快捷键.html', activeMatch: '/WebStorm编辑器/' },
