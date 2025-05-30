@@ -10,7 +10,7 @@ title: Vue2中mapbox地图初始化
 
 - 相较于openlayers，它可构建二维和三维地图，并支持MVT大批量数据加载
 
-# OpenLayers与Mapbox比较
+### OpenLayers与Mapbox比较
 
 - OpenLayers仅提供渲染能力，而Mapbox提供前后端接口服务能力。 
 
