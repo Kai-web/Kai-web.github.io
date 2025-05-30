@@ -14,10 +14,8 @@ title: APP测试应用：uniapp-app-demo
 - 该应用未兼容Web、H5、多端小程序、鸿蒙、ios、安卓8以下系统
 - [Node >= 18](https://nodejs.org/en/)
 - Npm >= 10
-- 将本项目clone至本地npm install
-- 在HBuilder中运行到手机或模拟器（也可直接云打包安装到手机）
 
-### 参考资料
+### 开发过程中用到的参考资料
 - [uniapp](https://zh.uniapp.dcloud.io/)
 - [vue3](https://cn.vuejs.org/guide/introduction)
 - [vite](https://vitejs.cn/vite3-cn/guide/)
