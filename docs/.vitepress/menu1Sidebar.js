@@ -1,5 +1,5 @@
 const commonVue = '/Vue2-3';
-const commonMiniProgram = '/小程序';
+const commonMiniProgram = '/App-小程序';
 const commonGit = '/Git';
 const commonMindMap = '/思维导图';
 const commonJsFragment = '/JS片段';
@@ -57,9 +57,17 @@ export const vueFragment = [
 
 export const miniProgram = [
   {
-    text: '小程序',
+    text: 'uni-app',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
+    items: [
+      {text: 'APP测试应用', link: `${commonMiniProgram}/APP测试应用.md`},
+    ]
+  },
+  {
+    text: '原生小程序',
+    collapsible: true,
+    collapsed: false,
     items: [
       {text: '版本更新检测', link: `${commonMiniProgram}/版本更新检测.md`},
       {text: 'text-align-last对齐两端文本', link: `${commonMiniProgram}/text-align-last对齐两端文本.md`},
