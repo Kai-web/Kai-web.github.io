@@ -61,6 +61,7 @@ export const miniProgram = [
     collapsible: true,
     collapsed: false,
     items: [
+      {text: 'APP应用(二)：定位导航', link: `${commonMiniProgram}/APP应用(二)：定位导航.md`},
       {text: 'APP应用(一)：登录', link: `${commonMiniProgram}/APP应用(一)：登录.md`},
       {text: 'APP应用', link: `${commonMiniProgram}/APP应用.md`},
     ]
