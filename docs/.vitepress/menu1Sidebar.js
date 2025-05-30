@@ -275,3 +275,15 @@ export const mindMap = [
     ]
   }
 ]
+
+// 添加默认导出
+export default [
+  ...mindMap,
+  ...vueFragment,
+  ...miniProgram,
+  ...jsFragment,
+  ...OpenLayers,
+  ...gitOrder,
+  ...environment,
+  ...editorUtility
+]

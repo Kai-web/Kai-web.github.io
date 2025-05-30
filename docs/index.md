@@ -27,13 +27,17 @@ features:
     title: 记录
     details: 学习优秀的开源作品，同时将学习到的知识记录下来，梳理所学，便于记录的内容被再次利用，不用再担心掌握的知识无迹可寻。
 ---
-<confetti />
 <script setup>
   import { onMounted, onUnmounted } from 'vue'
+  import menu1Sidebar from "./.vitepress/menu1Sidebar";
   // alert('站点部署在Github (搜索引擎无法收录)，国内访问较慢，请耐心等待。')
 
+  // Confetti组件
+  const Confetti = {
+    template: '<div class="confetti-container"></div>'
+  }
+
   // features跳转
-  //import menu1Sidebar from "./.vitepress/menu1Sidebar";
   onUnmounted(()=> {
   })
   onMounted(() => {
@@ -46,8 +50,11 @@ features:
       })
     }
 
-    vpContent.style.zIndex = '1';
-    })
+    const vpContent = document.querySelector('.VPContent');
+    if (vpContent) {
+      vpContent.style.zIndex = '1';
+    }
+  })
 </script>
 <style>
     :root {
