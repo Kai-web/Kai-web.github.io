@@ -149,9 +149,17 @@ export const jsFragment = [
 
 export const OpenLayers = [
   {
+    text: '‌Mapbox',
+    collapsible: true,
+    collapsed: false,
+    items: [
+      {text: '视口平移到所在坐标', link: `${commonOpenLayers}/视口平移到所在坐标.md`},
+    ]
+  },
+  {
     text: 'OpenLayers',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {text: '视口平移到所在坐标', link: `${commonOpenLayers}/视口平移到所在坐标.md`},
       {text: '根据坐标点绘制线', link: `${commonOpenLayers}/根据坐标点绘制线.md`},
