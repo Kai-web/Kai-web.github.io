@@ -61,6 +61,7 @@ export const miniProgram = [
     collapsible: true,
     collapsed: false,
     items: [
+      {text: 'APP应用(六)：GIS地图-图层', link: `${commonMiniProgram}/APP应用(六)：GIS地图-图层.md`},
       {text: 'APP应用(五)：GIS地图-renderjs', link: `${commonMiniProgram}/APP应用(五)：GIS地图-renderjs.md`},
       {text: 'APP应用(四)：App跳转小程序', link: `${commonMiniProgram}/APP应用(四)：App跳转小程序.md`},
       {text: 'APP应用(三)：本地存储', link: `${commonMiniProgram}/APP应用(三)：本地存储.md`},
