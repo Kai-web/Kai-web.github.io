@@ -1,8 +1,8 @@
 ---
-title: 账号登录和短信登录
+title: 账号登录和短信登录和微信登录
 ---
 
-# APP测试应用：账号登录、短信登录
+# APP测试应用：账号登录、短信登录、微信登录
 
 ### 账号登录和短信登录
 
@@ -10,14 +10,39 @@ title: 账号登录和短信登录
 
 - 账号登录
 
-<img src="/小程序/账号登录.jpg" width="300" height="200">
+<img src="/小程序/账号登录.jpg" width="200" height="200">
 
 - 短信登录
 
-<img src="/小程序/短信登录.jpg" width="300" height="200">
+<img src="/小程序/短信登录.jpg" width="200" height="200">
 
 
 - encryptlong库在uniapp中使用会报错，通过encryptlong源码可以看出它是基于jsencrypt库的方法拓展，所以我们需要本地修改jsencrypt库。
+
+
+### 安卓微信登录
+
+- 首先需要制作一个发布页（用来申请移动应用的APPID）
+- 登录已绑定小程序的微信开放平台申请移动应用的 AppID（应用类型流程图和申请说明尽量放简单的流程易通过）。
+- 安卓手机打正式包安装到手机后，可通过微信签名工具 Gen_Signature_Android221cbf.apk获取应用签名。
+
+<img src="/小程序/微信开放平台.png" width="400" height="400">
+
+- 安卓获取应用签名
+
+<img src="/小程序/应用签名.png" width="200" height="200">
+
+- 安卓微信登录成功
+
+<img src="/小程序/微信登录成功.png" width="200" height="200">
+
+
+### 移动应用申请
+
+- 移动应用申请通过后可通过APPID微信登录。获取真正的微信登录openId和unionId需要打自定义基座调试或者打正式包。后端需要通过unionId来判断是否已经在小程序中注册过。
+
+<img src="/小程序/移动应用申请.png" width="400" height="400">
+
 
 ### 参考资料
 - [uni-app使用jsencrypt](https://blog.csdn.net/weixin_39370093/article/details/125840700)
