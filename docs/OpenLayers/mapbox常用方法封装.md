@@ -2,7 +2,7 @@
 title: Vue2中mapbox常用方法封装
 ---
 
-# mapbox常用方法封装
+# Vue2中mapbox常用方法封装
 
 ### 获取行政区划边界
 ```js

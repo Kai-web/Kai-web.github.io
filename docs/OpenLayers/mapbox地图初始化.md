@@ -2,7 +2,9 @@
 title: Vue2中mapbox地图初始化
 ---
 
-# mapbox
+# Vue2中mapbox地图初始化
+
+### mapbox
 
 - mapbox是一个地图框架，不仅提供前端渲染能力，还具备后端服务接口能力。
 
@@ -18,18 +20,16 @@ title: Vue2中mapbox地图初始化
 
 - Mapbox提供优化导航路线和位置搜索等功能。
 
-# mapbox地图初始化
+### mapbox地图初始化
 
-
-
-### 安装mapbox v1版本 和 turf.js
+- 安装mapbox v1版本 和 turf.js
 
 ```bash
 npm install mapbox-gl
 npm install @turf/turf
 ```
 
-### 引入Mapbox GL库和样式文件。 
+- 引入Mapbox GL库和样式文件。 
 
 - 这里我将所有mapbox基础配置封装起来，方便多处调用，搭配天地图
 
