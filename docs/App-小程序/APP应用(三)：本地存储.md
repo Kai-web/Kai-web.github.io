@@ -187,7 +187,7 @@ export {
 
 ### SQLite写入读取封装
 
-<img src="/小程序/sqLite存储轨迹.png" width="600" height="600">
+<img src="/小程序/sqlite存储轨迹.png" width="600" height="600">
 
 ```js
 export const openSQL = (name) => {
