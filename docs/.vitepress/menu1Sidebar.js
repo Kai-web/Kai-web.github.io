@@ -79,6 +79,9 @@ export const miniProgram = [
     collapsible: true,
     collapsed: false,
     items: [
+      {text: 'Echarts封装2：饼图', link: `${commonMiniProgram}/Echarts封装2：饼图.md`},
+      {text: 'Echarts封装2：柱状图', link: `${commonMiniProgram}/Echarts封装2：柱状图.md`},
+      {text: 'Echarts点击区域偏移', link: `${commonMiniProgram}/Echarts点击区域偏移.md`},
       {text: '版本更新检测', link: `${commonMiniProgram}/版本更新检测.md`},
       {text: 'text-align-last对齐两端文本', link: `${commonMiniProgram}/text-align-last对齐两端文本.md`},
       {text: '小程序使用全局事件总线', link: `${commonMiniProgram}/小程序使用全局事件总线.md`},
