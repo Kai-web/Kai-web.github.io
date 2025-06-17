@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,a as l}from"./app.c25d72b6.js";const i=JSON.parse('{"title":"includes","description":"","frontmatter":{"title":"includes"},"headers":[],"relativePath":"JS\u7247\u6BB5/includes.md"}'),p={name:"JS\u7247\u6BB5/includes.md"},o=l("",3),e=[o];function c(t,r,D,y,F,A){return n(),a("div",null,e)}const d=s(p,[["render",c]]);export{i as __pageData,d as default};
