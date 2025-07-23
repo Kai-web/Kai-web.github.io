@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as l,a as n}from"./app.c25d72b6.js";const F=JSON.parse('{"title":"slice","description":"","frontmatter":{"title":"slice"},"headers":[],"relativePath":"JS\u7247\u6BB5/slice.md"}'),o={name:"JS\u7247\u6BB5/slice.md"},p=n("",3),e=[p];function c(t,r,C,y,A,i){return a(),l("div",null,e)}const _=s(o,[["render",c]]);export{F as __pageData,_ as default};
